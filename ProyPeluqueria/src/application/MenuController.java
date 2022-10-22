@@ -23,7 +23,7 @@ public class MenuController {
     	try {
 			// Cargamos el archivo Controles Dinámicos
 			FXMLLoader loader = new FXMLLoader();
-			//loader.setLocation(MenuController.class.getResource("/basicoDinamicoProy/ControlesDinamicosProy.fxml"));
+			loader.setLocation(MenuController.class.getResource("/basicoDinamicoProy/ControlesDinamicosProy.fxml"));
 			GridPane listadoControles = (GridPane) loader.load();
 
 			// Se sitúa en el centro del diseño principal

@@ -15,22 +15,32 @@
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
-          <Menu mnemonicParsing="false" text="File">
+            <Menu mnemonicParsing="false" text="Página de inicio">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Recursos">
             <items>
-                  <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Open" />
-              <MenuItem mnemonicParsing="false" onAction="#cerrarListado" text="Close" />
+                  <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Abrir" />
+              <MenuItem mnemonicParsing="false" onAction="#cerrarListado" text="Cerrar" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
+          <Menu mnemonicParsing="false" text="Información">
             <items>
               <MenuItem mnemonicParsing="false" text="Delete" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Help">
+          <Menu mnemonicParsing="false" text="Blog">
             <items>
               <MenuItem mnemonicParsing="false" text="About" />
             </items>
           </Menu>
+            <Menu mnemonicParsing="false" text="Ubicación">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
         </menus>
       </MenuBar>
    </top>

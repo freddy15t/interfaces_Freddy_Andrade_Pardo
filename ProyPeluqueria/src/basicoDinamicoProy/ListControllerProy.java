@@ -27,42 +27,42 @@ public class ListControllerProy {
     private ComboBox<String> combo1;
     
     @FXML
-    private TableView<Person> table1;
+    private TableView<Cliente> table1;
     
     @FXML
-    private TableColumn<Person, String> firstNameCol;
+    private TableColumn<Cliente, String> firstNameCol;
 
     @FXML
-    private TableColumn<Person, String> lastNameCol;
+    private TableColumn<Cliente, String> lastNameCol;
 
     @FXML
-    private TableColumn<Person, String> emailCol;
+    private TableColumn<Cliente, String> emailCol;
     
     @FXML
-    private TableColumn<Person, Integer> ageColumn;
+    private TableColumn<Cliente, Integer> ageColumn;
     
     @FXML
     private TreeView<String> tree1;
     
      // Lista auxiliar para TableView
-    private ObservableList<Person> data = FXCollections.observableArrayList(
-    	    new Person("Jacob", "Smith", "jacob.smith@example.com", 30),
-    	    new Person("Isabella", "Johnson", "isabella.johnson@example.com", 40),
-    	    new Person("Ethan", "Williams", "ethan.williams@example.com", 50),
-    	    new Person("Emma", "Jones", "emma.jones@example.com", 61),
-    	    new Person("Michael", "Brown", "michael.brown@example.com", 34)
+    private ObservableList<Cliente> data = FXCollections.observableArrayList(
+    	    new Cliente("Jacob", "Smith", "jacob.smith@example.com", 30),
+    	    new Cliente("Isabella", "Johnson", "isabella.johnson@example.com", 40),
+    	    new Cliente("Ethan", "Williams", "ethan.williams@example.com", 50),
+    	    new Cliente("Emma", "Jones", "emma.jones@example.com", 61),
+    	    new Cliente("Michael", "Brown", "michael.brown@example.com", 34)
     	);
 
     @FXML
     private void initialize() {   
         // Controles de JavaFX a los que se añaden directamente los items 
     	// Ítems del ChoiceBox
-        choice1.getItems().addAll("Choice1", "Choice2", "Choice3", "Choice4", "Choice5", 
-        		"Choice6", "Choice7", "Choice8", "Choice9");      
+        choice1.getItems().addAll("Corte clásico", "Corte militar ", "Corte Undercut", "Corte fade",
+        		"Corte taper", "Corte degrafilado", "Corte comb over", "Corte hongo", "Corte mohicano", "corte degradado");      
         
         // Ítems del ComboBox
-        combo1.getItems().addAll("Combo1", "Combo2", "Combo3", "Combo4", "Combo5", "Combo6",
-        		"Combo7", "Combo8", "Combo9");
+        combo1.getItems().addAll("Acondicionador de cabello", "Fijador para el pelo", "Champú", "Laca para el cabello", "Tinte para el cabello", "Crema de afeitar",
+        		"Jabón de afeitar");
                 
         // Ítems del ListView (con la segunda línea se asigna un CellFactory para permitir que sean editables)
         list1.getItems().addAll("Lista1", "Lista2", "Lista3");
@@ -71,10 +71,10 @@ public class ListControllerProy {
         list1.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
         
         // Asociamos cada columna del TableView a una propiedad de la clase Person 
-        firstNameCol.setCellValueFactory(new PropertyValueFactory<Person,String>("firstName"));
-        lastNameCol.setCellValueFactory(new PropertyValueFactory<Person,String>("lastName"));
-        emailCol.setCellValueFactory(new PropertyValueFactory<Person,String>("email"));
-        ageColumn.setCellValueFactory(new PropertyValueFactory<Person,Integer>("age"));
+        firstNameCol.setCellValueFactory(new PropertyValueFactory<Cliente,String>("firstName"));
+        lastNameCol.setCellValueFactory(new PropertyValueFactory<Cliente,String>("lastName"));
+        emailCol.setCellValueFactory(new PropertyValueFactory<Cliente,String>("email"));
+        ageColumn.setCellValueFactory(new PropertyValueFactory<Cliente,Integer>("age"));
         // Se rellena la tabla con objetos de la clase Person
         table1.setItems(data);     
         
