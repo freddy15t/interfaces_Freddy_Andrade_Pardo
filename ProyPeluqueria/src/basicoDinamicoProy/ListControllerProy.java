@@ -46,11 +46,11 @@ public class ListControllerProy {
     
      // Lista auxiliar para TableView
     private ObservableList<Cliente> data = FXCollections.observableArrayList(
-    	    new Cliente("Jacob", "Smith", "jacob.smith@example.com", 30),
-    	    new Cliente("Isabella", "Johnson", "isabella.johnson@example.com", 40),
-    	    new Cliente("Ethan", "Williams", "ethan.williams@example.com", 50),
-    	    new Cliente("Emma", "Jones", "emma.jones@example.com", 61),
-    	    new Cliente("Michael", "Brown", "michael.brown@example.com", 34)
+    	    new Cliente("Luis", "Pérez", "luispz@gmail.com", 645326352),
+    	    new Cliente("Ana", "Martinez", "Anamrt@gmail.com", 654987239),
+    	    new Cliente("Laura", "Guarniz", "Lauragr@gmail.com", 650236947),
+    	    new Cliente("Pablo", "Gutierrez", "Pabg.@gmail.com", 618195432),
+    	    new Cliente("Mario", "Bautista", "Mariobt@gmail.com", 684205637)
     	);
 
     @FXML
@@ -64,11 +64,7 @@ public class ListControllerProy {
         combo1.getItems().addAll("Acondicionador de cabello", "Fijador para el pelo", "Champú", "Laca para el cabello", "Tinte para el cabello", "Crema de afeitar",
         		"Jabón de afeitar");
                 
-        // Ítems del ListView (con la segunda línea se asigna un CellFactory para permitir que sean editables)
-        list1.getItems().addAll("Lista1", "Lista2", "Lista3");
-        list1.setCellFactory(TextFieldListCell.forListView());
-        // Para seleccionar más de un ítem a la vez
-        list1.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+        
         
         // Asociamos cada columna del TableView a una propiedad de la clase Person 
         firstNameCol.setCellValueFactory(new PropertyValueFactory<Cliente,String>("firstName"));
@@ -80,21 +76,15 @@ public class ListControllerProy {
         
         // Ítems para el TreeView
         // Ítem raíz
-        TreeItem<String> rootItem = new TreeItem<String>("Tutorials");
+        TreeItem<String> rootItem = new TreeItem<String>("Pedidos");
 
         // Ítem de primer nivel
-        TreeItem<String> webItem = new TreeItem<String>("Web Tutorials");
-        webItem.getChildren().add(new TreeItem<String>("HTML  Tutorial"));
-        webItem.getChildren().add(new TreeItem<String>("HTML5 Tutorial"));
-        webItem.getChildren().add(new TreeItem<String>("CSS Tutorial"));
-        webItem.getChildren().add(new TreeItem<String>("SVG Tutorial"));
+        TreeItem<String> webItem = new TreeItem<String>("Temporalmente vacío ");
+        webItem.getChildren().add(new TreeItem<String>(""));
         rootItem.getChildren().add(webItem);
         
         // Otro ítem de primer nivel
-        TreeItem<String> javaItem = new TreeItem<String>("Java Tutorials");
-        javaItem.getChildren().add(new TreeItem<String>("Java Language"));
-        javaItem.getChildren().add(new TreeItem<String>("Java Collections"));
-        javaItem.getChildren().add(new TreeItem<String>("Java Concurrency"));
+        TreeItem<String> javaItem = new TreeItem<String>("");
         rootItem.getChildren().add(javaItem);
         
         // Para que sea editable necesitamos especificar un CellFactory con el tipo que corresponda

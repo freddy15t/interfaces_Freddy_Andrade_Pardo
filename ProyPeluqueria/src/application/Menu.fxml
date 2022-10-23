@@ -15,32 +15,25 @@
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
-            <Menu mnemonicParsing="false" text="Página de inicio">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-              </items>
-            </Menu>
+            <Menu mnemonicParsing="false" text="Página de inicio" />
           <Menu mnemonicParsing="false" text="Recursos">
             <items>
                   <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Abrir" />
               <MenuItem mnemonicParsing="false" onAction="#cerrarListado" text="Cerrar" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Información">
+          <Menu mnemonicParsing="false" text="Opciones de desarrolador">
             <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
+              <MenuItem mnemonicParsing="false" text="Añadir" />
+                  <MenuItem mnemonicParsing="false" text="Editar" />
+                  <MenuItem mnemonicParsing="false" text="Eliminar" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Blog">
+          <Menu mnemonicParsing="false" text="Ayuda">
             <items>
               <MenuItem mnemonicParsing="false" text="About" />
             </items>
           </Menu>
-            <Menu mnemonicParsing="false" text="Ubicación">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-              </items>
-            </Menu>
         </menus>
       </MenuBar>
    </top>
@@ -55,7 +48,7 @@
                   <Insets bottom="80.0" left="22.0" />
                </VBox.margin>
             </Label>
-            <ImageView fitHeight="496.0" fitWidth="614.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="600" fitWidth="600" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../img/Peluqueria.jpg" />
                </image>
