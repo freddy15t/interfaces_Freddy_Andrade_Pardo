@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
@@ -13,34 +14,32 @@
 
 <BorderPane prefHeight="650.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
    <top>
-      <MenuBar BorderPane.alignment="CENTER">
+      <MenuBar style="-fx-background-color: #F4FAD2;" BorderPane.alignment="CENTER">
         <menus>
-            <Menu mnemonicParsing="false" text="Página de inicio" />
+            <Menu mnemonicParsing="false" onAction="#abrirFormulario" text="INICIO" />
           <Menu mnemonicParsing="false" text="Recursos">
             <items>
                   <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Abrir" />
               <MenuItem mnemonicParsing="false" onAction="#cerrarListado" text="Cerrar" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Opciones de desarrolador">
+          <Menu mnemonicParsing="false" text="Localización">
             <items>
-              <MenuItem mnemonicParsing="false" text="Añadir" />
-                  <MenuItem mnemonicParsing="false" text="Editar" />
-                  <MenuItem mnemonicParsing="false" text="Eliminar" />
+              <MenuItem mnemonicParsing="false" text="Localizacion" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Ayuda">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
+            <Menu mnemonicParsing="false" text="Tutorial">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Localizacion" />
+               </items>
+            </Menu>
         </menus>
       </MenuBar>
    </top>
    <center>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #F8A13E;" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Peluquería" textFill="#2f1b5e">
+            <Label prefHeight="53.0" prefWidth="268.0" text="Peluquería" textFill="#1b3394">
                <font>
                   <Font size="36.0" />
                </font>
@@ -48,10 +47,13 @@
                   <Insets bottom="80.0" left="22.0" />
                </VBox.margin>
             </Label>
-            <ImageView fitHeight="600" fitWidth="600" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="600.0" fitWidth="600.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../img/Peluqueria.jpg" />
                </image>
+               <rotationAxis>
+                  <Point3D x="1.0" z="1.0" />
+               </rotationAxis>
             </ImageView>
          </children>
       </VBox>

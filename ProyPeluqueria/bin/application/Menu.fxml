@@ -13,9 +13,9 @@
 
 <BorderPane prefHeight="650.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
    <top>
-      <MenuBar BorderPane.alignment="CENTER">
+      <MenuBar style="-fx-background-color: #F4FAD2;" BorderPane.alignment="CENTER">
         <menus>
-            <Menu mnemonicParsing="false" text="Página de inicio" />
+            <Menu mnemonicParsing="false" onAction="#abrirFormulario" text="INICIO" />
           <Menu mnemonicParsing="false" text="Recursos">
             <items>
                   <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Abrir" />
@@ -31,7 +31,7 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Ayuda">
             <items>
-              <MenuItem mnemonicParsing="false" text="About" />
+              <MenuItem mnemonicParsing="false" text="Localizacion" />
             </items>
           </Menu>
         </menus>
@@ -40,7 +40,7 @@
    <center>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #F8A13E;" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Peluquería" textFill="#2f1b5e">
+            <Label prefHeight="53.0" prefWidth="268.0" text="Peluquería" textFill="#1b3394">
                <font>
                   <Font size="36.0" />
                </font>

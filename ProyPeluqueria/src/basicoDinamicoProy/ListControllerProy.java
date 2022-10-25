@@ -74,25 +74,7 @@ public class ListControllerProy {
         // Se rellena la tabla con objetos de la clase Person
         table1.setItems(data);     
         
-        // Ítems para el TreeView
-        // Ítem raíz
-        TreeItem<String> rootItem = new TreeItem<String>("Pedidos");
-
-        // Ítem de primer nivel
-        TreeItem<String> webItem = new TreeItem<String>("Temporalmente vacío ");
-        webItem.getChildren().add(new TreeItem<String>(""));
-        rootItem.getChildren().add(webItem);
-        
-        // Otro ítem de primer nivel
-        TreeItem<String> javaItem = new TreeItem<String>("");
-        rootItem.getChildren().add(javaItem);
-        
-        // Para que sea editable necesitamos especificar un CellFactory con el tipo que corresponda
-        tree1.setCellFactory(TextFieldTreeCell.forTreeView());
-        
-        // Expadimos por defecto el ítem raíz
-        rootItem.setExpanded(true); 
-        tree1.setRoot(rootItem);               
+                  
     }
     
 }
