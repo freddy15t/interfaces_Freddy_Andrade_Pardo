@@ -16,21 +16,24 @@
    <top>
       <MenuBar style="-fx-background-color: #F4FAD2;" BorderPane.alignment="CENTER">
         <menus>
-            <Menu mnemonicParsing="false" onAction="#abrirFormulario" text="INICIO" />
+            <Menu mnemonicParsing="false" text="INICIO">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Volver" text="Volver" />
+               </items></Menu>
           <Menu mnemonicParsing="false" text="Recursos">
             <items>
                   <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Abrir" />
               <MenuItem mnemonicParsing="false" onAction="#cerrarListado" text="Cerrar" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Localización">
+          <Menu mnemonicParsing="false" text="Formulario">
             <items>
-              <MenuItem mnemonicParsing="false" text="Localizacion" />
+              <MenuItem mnemonicParsing="false" onAction="#Abrir" text="Abrir" />
             </items>
           </Menu>
             <Menu mnemonicParsing="false" text="Tutorial">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Localizacion" />
+                  <MenuItem mnemonicParsing="false" onAction="#abrirTutorial" text="abrir" />
                </items>
             </Menu>
         </menus>
