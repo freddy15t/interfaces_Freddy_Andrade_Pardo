@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane minHeight="577.0" minWidth="594.0" prefHeight="672.0" prefWidth="594.0" 
+style="-fx-background-color: #D2F8FA;" xmlns="http://javafx.com/javafx/18"
+ xmlns:fx="http://javafx.com/fxml/1" fx:controller="PaginaUno.ListControllerProy">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="89.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="195.0" minHeight="10.0" prefHeight="101.5" vgrow="NEVER" />
+      <RowConstraints maxHeight="330.0" minHeight="10.0" prefHeight="133.5" vgrow="NEVER" />
+      <RowConstraints maxHeight="469.5" minHeight="0.0" prefHeight="214.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="661.0" minHeight="10.0" prefHeight="238.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="661.0" minHeight="10.0" prefHeight="147.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <Label text="Tipos de corte">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <ChoiceBox fx:id="choice1" opacity="0.56" prefWidth="150.0" GridPane.columnIndex="1">
+         <effect>
+            <Blend />
+         </effect></ChoiceBox>
+      <Label text="Cosmeticos disponibles" GridPane.rowIndex="1">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <ComboBox fx:id="combo1" editable="true" prefHeight="25.0" prefWidth="187.0"
+       promptText="Seleccione un cosmético..." visibleRowCount="5" GridPane.columnIndex="1" 
+       GridPane.rowIndex="1" />
+      <Label text="Empleados" GridPane.rowIndex="2">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <TableView fx:id="table1" fixedCellSize="30.0" prefHeight="200.0" prefWidth="200.0"
+       tableMenuButtonVisible="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         
+         <columns>
+            <TableColumn fx:id="nombreC" prefWidth="75.0" text="Nombre " />
+            <TableColumn fx:id="apellidoC" prefWidth="87.5" text="Apellido" />
+            <TableColumn fx:id="emailCol" minWidth="0.0" prefWidth="86.5" text="email" />
+            <TableColumn fx:id="edadC" minWidth="2.5" prefWidth="147.0" text="Teléfono" />
+         </columns>
+         
+         <GridPane.margin>
+            <Insets bottom="10.0" right="10.0" />
+         </GridPane.margin>
+      </TableView>
+      <Label text="Pedidos" GridPane.rowIndex="3">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextArea prefHeight="200.0" prefWidth="401.0" text="Plazos de entrega:&#10;Todos 
+      los pedidos realizados hasta 17:00h, tienen un plazo de entrega&#10; de 24/48 h (en península) desde el día de la realización del pedido,&#10; posterior a esa hora el plazo cuenta desde el día siguiente.&#10;&#10;Si el pedido se realiza previo a festivo, sábado o domingo, los plazos&#10; cuentan desde el siguiente día laborable.&#10;&#10;Para envíos a Canarias, Baleares, Ceuta y Melilla, consultar condiciones.&#10;&#10;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <children>
+            <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="32.0"
+             prefWidth="157.0" text="Añadir..." textAlignment="JUSTIFY" textFill="#241c80">
+               <HBox.margin>
+                  <Insets top="160.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="32.0" 
+            prefWidth="176.0" text="Editar..." textFill="#825530">
+               <HBox.margin>
+                  <Insets top="160.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="193.0" text="Eliminar..."
+             textFill="#be0f0f">
+               <HBox.margin>
+                  <Insets top="160.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      
+   </children>
+   <padding>
+      <Insets bottom="80.0" />
+   </padding>
+</GridPane>
