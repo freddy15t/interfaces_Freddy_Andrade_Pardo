@@ -1,9 +1,7 @@
 package PaginaUno;
 
-import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
 
 
 public class Cliente {
@@ -26,22 +24,13 @@ public class Cliente {
     public void setNombre(String fName) {
         nombre.set(fName);
     }
-    
-    public StringProperty nombreProperty() {
-		return nombre;
-	}
         
     public String getApellido() {
         return apellido.get();
     }
-    public void setApellido(String fName) {
+    public void setApellidoe(String fName) {
     	apellido.set(fName);
     }
-    
-    public StringProperty apellidoProperty() {
-		return apellido;
-	}
-    
     
     public String getEmail() {
         return email.get();
@@ -51,18 +40,11 @@ public class Cliente {
         email.set(fName);
     }
 
-    public StringProperty emailProperty() {
-		return email;
-	}
-    
 	public Integer getEdad() {
 		return edad.get();
 	}
 	public void setEdad(Integer fAge) {
 		edad.set(fAge);
-    }     
-	public IntegerProperty edadProperty() {
-		return edad;
-	}
+    }        
         
 }

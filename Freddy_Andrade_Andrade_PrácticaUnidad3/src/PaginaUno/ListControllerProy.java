@@ -18,18 +18,17 @@ import javafx.scene.control.cell.TextFieldTreeCell;
 public class ListControllerProy {
 
     @FXML
-    private ChoiceBox<String> elegir;
+    private ChoiceBox<String> choice1;
 
     @FXML
-    private ListView<String> lista;
+    private ListView<String> list1;
     
     @FXML
-    private ComboBox<String> combo;
+    private ComboBox<String> combo1;
     
     @FXML
-    private TableView<Cliente> tabla;
+    private TableView<Cliente> table1;
     
-
     @FXML
     private TableColumn<Cliente, String> nombreC;
 
@@ -45,13 +44,9 @@ public class ListControllerProy {
     @FXML
     private TreeView<String> tree1;
     
-
-    
-
-    
      // Lista auxiliar para TableView
     private ObservableList<Cliente> data = FXCollections.observableArrayList(
-    	    new Cliente("Luis", "PÔøΩrez", "luispz@gmail.com", 645326352),
+    	    new Cliente("Luis", "PÈrez", "luispz@gmail.com", 645326352),
     	    new Cliente("Ana", "Martinez", "Anamrt@gmail.com", 654987239),
     	    new Cliente("Laura", "Guarniz", "Lauragr@gmail.com", 650236947),
     	    new Cliente("Pablo", "Gutierrez", "Pabg.@gmail.com", 618195432),
@@ -60,21 +55,17 @@ public class ListControllerProy {
 
     @FXML
     private void initialize() {   
-        // Controles de JavaFX a los que se aÔøΩaden directamente los items 
-    	// ÔøΩtems del ChoiceBox
-        elegir.getItems().addAll("Corte clÔøΩsico", "Corte militar ", "Corte Undercut", "Corte fade",
+        // Controles de JavaFX a los que se aÒaden directamente los items 
+    	// Õtems del ChoiceBox
+        choice1.getItems().addAll("Corte cl·sico", "Corte militar ", "Corte Undercut", "Corte fade",
         		"Corte taper", "Corte degrafilado", "Corte comb over", 
         		"Corte hongo", "Corte mohicano", "corte degradado");      
         
-        // ÔøΩtems del ComboBox
-        combo.getItems().addAll("Acondicionador de cabello", "Fijador para el pelo", "ChampÔøΩ", 
+        // Õtems del ComboBox
+        combo1.getItems().addAll("Acondicionador de cabello", "Fijador para el pelo", "Champ˙", 
         		"Laca para el cabello", "Tinte para el cabello", "Crema de afeitar",
-        		"JabÔøΩn de afeitar");
+        		"JabÛn de afeitar");
                 
-        
-        nombreC.setCellValueFactory(cellData -> cellData.getValue().nombreProperty());
-        apellidoC.setCellValueFactory(cellData -> cellData.getValue().apellidoProperty());
-    	
         
         
         // Asociamos cada columna del TableView a una propiedad de la clase Person 
@@ -83,16 +74,9 @@ public class ListControllerProy {
         emailCol.setCellValueFactory(new PropertyValueFactory<Cliente,String>("email"));
         edadC.setCellValueFactory(new PropertyValueFactory<Cliente,Integer>("edad"));
         // Se rellena la tabla con objetos de la clase Person
-        tabla.setItems(data);     
+        table1.setItems(data);     
         
                   
     }
     
-
-               
-        // TODO Versi√≥n con map
-        //TablaPersona.setItems(this.mainApp.getMapData()); 
-    }
-    
-
-
+}

@@ -20,6 +20,11 @@
                <items>
                   <MenuItem mnemonicParsing="false" onAction="#Volver" text="Volver" />
                </items></Menu>
+            <Menu mnemonicParsing="false" text="IniciarSesion">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Entrar" text="Entrar" />
+               </items>
+            </Menu>
           <Menu mnemonicParsing="false" text="Recursos">
             <items>
                   <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Abrir" />
@@ -34,6 +39,11 @@
             <Menu mnemonicParsing="false" text="Tutorial">
                <items>
                   <MenuItem mnemonicParsing="false" onAction="#abrirTutorial" text="abrir" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Mensjaes">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#abrirSms" text="abrirSms" />
                </items>
             </Menu>
         </menus>

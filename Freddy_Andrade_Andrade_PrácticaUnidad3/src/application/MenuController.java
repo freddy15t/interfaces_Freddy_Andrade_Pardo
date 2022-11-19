@@ -6,12 +6,14 @@ import PaginaTres.MainLayouts_Controles;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
 
 public class MenuController {
 	
-	// Pantalla principal en la que se añade o quita contenido
+	// Pantalla principal en la que se aï¿½ade o quita contenido
 	private BorderPane rootLayout;
   
     @FXML
@@ -22,12 +24,12 @@ public class MenuController {
     @FXML
     void Volver(ActionEvent event) {
     	try {
-			// Cargamos el archivo Controles Dinámicos
+			// Cargamos el archivo Controles Dinï¿½micos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MenuController.class.getResource("/application/Menu.fxml"));
 			BorderPane volver = (BorderPane) loader.load();
 
-			// Se sitúa en el centro del diseño principal
+			// Se sitï¿½a en el centro del diseï¿½o principal
 			rootLayout.setCenter(volver);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -43,7 +45,7 @@ public class MenuController {
 			loader.setLocation(MainLayouts_Controles.class.getResource("/PaginaDos/Control.fxml"));
 			GridPane abrirFormulario = (GridPane) loader.load();
 
-			// Se sitúa en el centro del diseño principal
+			// Se sitï¿½a en el centro del diseï¿½o principal
 			rootLayout.setCenter(abrirFormulario);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -59,7 +61,7 @@ public class MenuController {
 			loader.setLocation(MainLayouts_Controles.class.getResource("/PaginaTres/MainLayouts_Controles.fxml"));
 			BorderPane controlavanzado = (BorderPane) loader.load();
 
-			// Se sitúa en el centro del diseño principal
+			// Se sitï¿½a en el centro del diseï¿½o principal
 			rootLayout.setCenter(controlavanzado);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -70,19 +72,48 @@ public class MenuController {
     @FXML
     private void abrirFormulario(ActionEvent event) {    	
     	try {
-			// Cargamos el archivo Controles Dinámicos
+			// Cargamos el archivo Controles Dinï¿½micos
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MenuController.class.getResource("/PaginaUno/ControlesPagUno.fxml"));
 			GridPane listadoControles = (GridPane) loader.load();
 
-			// Se sitúa en el centro del diseño principal
+			// Se sitï¿½a en el centro del diseï¿½o principal
 			rootLayout.setCenter(listadoControles);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
     }
     
+    @FXML
+    void abrirSms(ActionEvent event) {
+    	try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MenuController.class.getResource("/mensajes/Alert.fxml"));
+			AnchorPane volver = (AnchorPane) loader.load();
+
+			rootLayout.setCenter(volver);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+    }
     
+    
+    @FXML
+    void Entrar(ActionEvent event) {
+
+    
+    	try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MenuController.class.getResource("/InicioSesion/MiDialogo.fxml"));
+			AnchorPane entrar = (AnchorPane) loader.load();
+
+			rootLayout.setCenter(entrar);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+    }
     
     
     @FXML
@@ -97,6 +128,11 @@ public class MenuController {
 
 	public void setRootLayout(BorderPane rootLayout) {
 		this.rootLayout = rootLayout;
+	}
+
+	public void setRootLayout(VBox rootLayout1) {
+		// TODO Auto-generated method stub
+		
 	}	
     
 }
