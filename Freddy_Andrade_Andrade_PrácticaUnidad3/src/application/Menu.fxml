@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.geometry.Point3D?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
@@ -12,63 +11,53 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="650.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerMenu">
    <top>
-      <MenuBar style="-fx-background-color: #F4FAD2;" BorderPane.alignment="CENTER">
+      <MenuBar style="-fx-background-color: #dad418;" BorderPane.alignment="CENTER">
         <menus>
             <Menu mnemonicParsing="false" text="INICIO">
                <items>
-                  <MenuItem mnemonicParsing="false" onAction="#Volver" text="Volver" />
-               </items></Menu>
-            <Menu mnemonicParsing="false" text="IniciarSesion">
-               <items>
-                  <MenuItem mnemonicParsing="false" onAction="#Entrar" text="Entrar" />
+                  <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="abrir" />
+                  <MenuItem fx:id="salir1" mnemonicParsing="false" onAction="#cerrarListado" text="Salir" />
                </items>
             </Menu>
           <Menu mnemonicParsing="false" text="Recursos">
             <items>
-                  <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Abrir" />
-              <MenuItem mnemonicParsing="false" onAction="#cerrarListado" text="Cerrar" />
+              <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="abrir" />
+                  <MenuItem fx:id="salir" mnemonicParsing="false" onAction="#cerrarListado" text="Salir" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Formulario">
+          <Menu mnemonicParsing="false" text="Tutorial">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#Abrir" text="Abrir" />
+              <MenuItem mnemonicParsing="false" onAction="#abrirTutorial" text="abrir" />
+                  <MenuItem mnemonicParsing="false" onAction="#cerrarListado" text="Salir" />
             </items>
           </Menu>
-            <Menu mnemonicParsing="false" text="Tutorial">
+            <Menu mnemonicParsing="false" text="Formulario">
                <items>
-                  <MenuItem mnemonicParsing="false" onAction="#abrirTutorial" text="abrir" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Mensjaes">
-               <items>
-                  <MenuItem mnemonicParsing="false" onAction="#abrirSms" text="abrirSms" />
+                  <MenuItem mnemonicParsing="false" onAction="#Abrir" text="abrir" />
                </items>
             </Menu>
         </menus>
       </MenuBar>
    </top>
    <center>
-      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #F8A13E;" BorderPane.alignment="CENTER">
+      <VBox fx:id="vboxMovimiento" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
          <children>
-            <Label prefHeight="53.0" prefWidth="268.0" text="Peluquería" textFill="#1b3394">
+            <Label text="Peluquería" textFill="#1a3ed9">
                <font>
-                  <Font size="36.0" />
+                  <Font size="20.0" />
                </font>
-               <VBox.margin>
-                  <Insets bottom="80.0" left="22.0" />
-               </VBox.margin>
             </Label>
-            <ImageView fitHeight="600.0" fitWidth="600.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="400.0" fitWidth="607.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../img/Peluqueria.jpg" />
+                  <Image url="@../../../../../../DESARROLLO%20DE%20INTERFACES/Interfaces/ProyPeluqueria/img/Peluqueria.jpg" />
                </image>
-               <rotationAxis>
-                  <Point3D x="1.0" z="1.0" />
-               </rotationAxis>
             </ImageView>
          </children>
+         <opaqueInsets>
+            <Insets right="10.0" />
+         </opaqueInsets>
       </VBox>
    </center>
 </BorderPane>
