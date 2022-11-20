@@ -38,7 +38,7 @@ public class PracticaMain extends Application {
 	@Override
 	public void start(Stage primaryStage) { 
 		this.primaryStage = primaryStage;
-		this.primaryStage.setTitle("Inciar sesión");
+		this.primaryStage.setTitle("Pagina principal");
 		iniciPrincipal();
 		
 	}
@@ -100,7 +100,7 @@ public class PracticaMain extends Application {
 			Stage stage= new Stage();
 			stage.setScene(scene);
 			stage.setResizable(false);
-			stage.setTitle("Inicar sesión");
+			stage.setTitle("Página principal");
 			stage.show();
 			
 			
@@ -108,10 +108,8 @@ public class PracticaMain extends Application {
 			    System.out.println(" -> " + keyEvent.getCode().toString( )); 
 			    if(keyEvent.isControlDown()) {
 			    	if(keyEvent.getCode().toString( ).equals("a")|| keyEvent.getCode().toString( ).equals("A")) {
-			    		Utilidades.modalFormulario();
-			    	
+			 
 			    	}else if ((keyEvent.getCode().toString( ).equals("B")|| keyEvent.getCode().toString( ).equals("b")) ) {
-			    			Utilidades.mostrarCita();
 			    	}
 			    }
 			});

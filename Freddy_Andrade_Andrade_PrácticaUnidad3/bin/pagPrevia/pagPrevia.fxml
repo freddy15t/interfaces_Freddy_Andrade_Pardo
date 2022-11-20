@@ -8,9 +8,9 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="373.0" prefWidth="300.0" style="-fx-background-color: aquamarine;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pagPrevia.ControllerPagPrevia">
    <children>
       <Button fx:id="okBoton" layoutX="101.0" layoutY="322.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: green;" text="Entrar" />
-      <Text fill="#362ea9" layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accede al Ok para entrar en la pagina web:" wrappingWidth="267.12109375">
+      <Text fill="#362ea9" layoutX="16.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accede al boton entrar para ver el proyecto" wrappingWidth="267.12109375">
          <font>
-            <Font size="14.0" />
+            <Font size="24.0" />
          </font>
       </Text>
    </children>

@@ -31,92 +31,23 @@ public class Utilidades {
 	    	return auxAlert;
 	    }
 	  
-	  public static void modalFormulario() {
-		  try {
-	            // Cargue el archivo fxml y cree una nueva etapa para el cuadro de di�logo emergente.
-	        	FXMLLoader loader = new FXMLLoader();
-				loader.setLocation(ControllerMenu.class.getResource("/formulario/FormularioCitas.fxml"));
-				GridPane page = (GridPane) loader.load();
-
-	            // Create the dialog Stage.
-	            Stage dialogStage = new Stage();
-	            dialogStage.setTitle("Consulta cliente");
-	            dialogStage.initModality(Modality.APPLICATION_MODAL);
-	            Scene scene = new Scene(page);
-	            dialogStage.setScene(scene);
-	            
-	            
-	         
-	            dialogStage.showAndWait(); // como no se cierra ok no va haber hasta que pulse el ok
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	           
-	        }
-	  }
-	  
-	 public static void mostrarCita() {
-	    	 try {
-		            // Cargue el archivo fxml y cree una nueva etapa para el cuadro de di�logo emergente.
-	    		 FXMLLoader loader = new FXMLLoader();
-	         	loader.setLocation(ControllerMenu.class.getResource("/datos/DatosCitas.fxml"));
-	 			SplitPane page= (SplitPane) loader.load();
-
-		            // Create the dialog Stage.
-		            Stage dialogStage = new Stage();
-		            dialogStage.setTitle("Consulta cliente");
-		            dialogStage.initModality(Modality.APPLICATION_MODAL);
-		            Scene scene = new Scene(page);
-		            dialogStage.setScene(scene);
-		            
-		            // Show the dialog and wait until the user closes it
-		            dialogStage.showAndWait(); // como no se cierra ok no va haber hasta que pulse el ok
-		        } catch (IOException e) {
-		            e.printStackTrace();
-		           
-		        }
-	    }
 	 
-	 
-	 public static void mostrarPendiente() {
+
+	 public static void previa() {
     	 try {
-	            // Cargue el archivo fxml y cree una nueva etapa para el cuadro de di�logo emergente.
-    		 FXMLLoader loader = new FXMLLoader();
-	 			loader.setLocation(PracticaMain.class.getResource("/datos/Proceso.fxml"));
-	 			AnchorPane page = (AnchorPane) loader.load();
-
-	            // Create the dialog Stage.
-	            Stage dialogStage = new Stage();
-	            dialogStage.setTitle("Consulta cliente");
-	            dialogStage.initModality(Modality.APPLICATION_MODAL);
-	            Scene scene = new Scene(page);
-	            dialogStage.setScene(scene);
-	            
-	            // Show the dialog and wait until the user closes it
-	            dialogStage.showAndWait(); // como no se cierra ok no va haber hasta que pulse el ok
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	           
-	        }
-    }
-	 
-	 public static void modalPaginator() {
-    	 try {
-	            // Cargue el archivo fxml y cree una nueva etapa para el cuadro de di�logo emergente.
  			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(ControllerPagPrevia.class.getResource("/pagPrevia/pagPrevia.fxml"));
 			AnchorPane page = (AnchorPane) loader.load();
 
-	            // Create the dialog Stage.
 	            Stage dialogStage = new Stage();
-	            dialogStage.setTitle("ANTES DE EMPEZAR");
+	            dialogStage.setTitle("Página previa");
 	            dialogStage.initModality(Modality.APPLICATION_MODAL);
 	            Scene scene = new Scene(page);
 	            dialogStage.setScene(scene);
 	            ControllerPagPrevia controller = loader.getController();
 		           controller.setDialogStage(dialogStage);
 	            
-	            // Show the dialog and wait until the user closes it
-	            dialogStage.showAndWait(); // como no se cierra ok no va haber hasta que pulse el ok
+		           dialogStage.showAndWait();
 	        } catch (IOException e) {
 	            e.printStackTrace();
 	           
@@ -124,7 +55,6 @@ public class Utilidades {
     }
 
 	public static void pagPrevia() {
-		// TODO Auto-generated method stub
 		
 	}
 

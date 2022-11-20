@@ -70,7 +70,7 @@ public class ControllerMenu {
 	    @FXML
 	    void iniciarSesion(ActionEvent event) {
 	    	if(usuario.getText().equals("freddy") && contraseña.getText().equals("1234")) {
-	    		antesEmpeza();
+	    		pagPrev();
 	    		main.abrirGeneral();
 	    		Stage ventana =(Stage) this.entrar.getScene().getWindow();
 				ventana.close();
@@ -99,7 +99,7 @@ public class ControllerMenu {
 	@FXML
 	   private void cerrarListado(ActionEvent event) throws IOException { 
 		main.abrirGeneral();
-		Image image1 = new Image(getClass(). getResourceAsStream("pelupelu.jpf"));
+		Image image1 = new Image(getClass(). getResourceAsStream("LogoSalon"));
 		ImageView imag= new ImageView(image1);	
 		imag.setFitHeight(198);
 		imag.setFitWidth(300);	
@@ -111,19 +111,7 @@ public class ControllerMenu {
 		rootLayout.setCenter(vbox);
 		
 	}
-    @FXML
-    void abrirTodasLasCitas(ActionEvent event) {
-    	try {
-    		FXMLLoader loader = new FXMLLoader();
-        	loader.setLocation(ControllerMenu.class.getResource("/datos/DatosCitas.fxml"));
-			SplitPane datosCitas= (SplitPane) loader.load();
-			
-			rootLayout.setCenter(datosCitas);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-    }
+    
     
    
     
@@ -157,8 +145,8 @@ public class ControllerMenu {
     }
     
     
-		public void antesEmpeza() {
-			Utilidades.modalPaginator();
+		public void pagPrev() {
+			Utilidades.previa();
 		}
 		
 	    
