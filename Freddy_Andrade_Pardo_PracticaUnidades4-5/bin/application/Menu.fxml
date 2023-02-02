@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="400.0" style="-fx-background-color: orange;" stylesheets="@../css/menu.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerMenu">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+            <Menu text="Inicio">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Citar" />
+                  <MenuItem fx:id="salir1" mnemonicParsing="false" onAction="#cerrarListado" text="Salir" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Recursos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Citar" />
+                  <MenuItem fx:id="salir" mnemonicParsing="false" onAction="#cerrarListado" text="Salir" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Formulario">
+            <items>
+                  <RadioMenuItem fx:id="idpendientes" mnemonicParsing="false" onAction="#abrirPendientes" text="Pendientes">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="agendaSelec" />
+                     </toggleGroup></RadioMenuItem>
+                  <RadioMenuItem fx:id="idacabadas" mnemonicParsing="false" onAction="#abrirPendientes" text="Acabadas" toggleGroup="$agendaSelec" />
+                  <RadioMenuItem mnemonicParsing="false" onAction="#abrirTodasLasCitas" text="Todas" toggleGroup="$agendaSelec" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Info">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#abrirEstadisticas" text="Estadisticas" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Tutorial">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirTutorial" text="Ver" />
+                  <MenuItem mnemonicParsing="false" onAction="#cerrarListado" text="Salir" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox fx:id="vboxMovimiento" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="fisio" text="Peluquería">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <ImageView blendMode="SRC_ATOP" fitHeight="236.0" fitWidth="552.0">
+               <image>
+                  <Image url="@../../../ProyPeluqueria/img/Peluqueria.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets right="10.0" />
+         </opaqueInsets>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,23 @@
+
+.root{
+	-fx-pref-width:700;
+	-fx-pref-height:400;
+}
+
+.menu-bar {
+    -fx-background-color: salmon ;
+    -fx-border-width: 2.0;
+
+}
+.menu-bar .label {
+    -fx-font-size: 15;
+    -fx-font-weight: bold; 
+    -fx-text-fill: blue;
+    -fx-padding: 10px;
+}
+
+
+ #fisio{
+ 	-fx-text-fill: #259782 ;
+ } 
+  

@@ -1,0 +1,87 @@
+
+.root {
+	-fx-pref-width:400;
+	-fx-pref-height:180; 
+    -fx-background-repeat:no-repeat;
+    -fx-background-size: stretch;
+    -fx-base: mintcream;
+    
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+   
+}
+#psssw::focuset{
+	-fx-prompt-text-fill: "green";
+}
+
+
+.header{
+	-fx-background-color:'black';
+}
+
+.label{
+	-fx-text-fill:aquamarine;
+}
+#ejemplo{
+	-fx-opacity: 0;
+	-fx-text-fill:white;
+	-fx-font-weight:bold;
+	-fx-text-alignment:left;
+	-fx-border-color:red;
+	-fx-background-color:red;
+	-fx-border-width:3px;
+	-fx-border-radius:25px;
+	-fx-background-radius:25px;
+	-fx-pref-column-count:25;
+	
+}
+#ejemplo:hover{
+	-fx-opacity: 100;
+}
+
+
+.text-field{
+	-fx-border-color:green;
+	-fx-border-width:3px;
+	-fx-pref-column-count:25;
+}
+
+#usuarioLabel{
+	-fx-pref-width:88;
+	-fx-pref-height:17;
+	-fx-text-fill:blue;
+	-fx-halignment:center;
+	-fx-font-family: "Caveat";
+	-fx-effect: dropshadow(three-pass-box, #000000, 10.0, 0, 0, 0);
+	
+	
+}
+	
+
+
+#pswLabel{
+	-fx-text-fill:blue;
+	-fx-halignment:center;
+	-fx-font-family: "Caveat";
+	-fx-effect: dropshadow(three-pass-box, #000000, 10.0, 0, 0, 0);
+	
+}
+.button{
+	-fx-background-color:green;
+	-fx-text-fill:white;
+	-fx-border-width:7px;
+	-fx-border-radius:20px;
+	-fx-background-radius:20px;
+	-fx-font-family: "Serif";
+
+}
+
+
+.button:hover{
+	-fx-background-color:lightgreen;
+	-fx-text-fill:blue;
+	-fx-effect: dropshadow(three-pass-box, #000000, 10.0, 0, 0, 0);
+}
+.button:pressed{
+	-fx-background-color:red;
+	-fx-text-fill:white;
+}
