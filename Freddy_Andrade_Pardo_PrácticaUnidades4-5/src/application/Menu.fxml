@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerMenu">
+   <top>
+      <MenuBar style="-fx-background-color: lightblue;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="INICIO">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Ver" />
+                  <MenuItem mnemonicParsing="false" text="Salir" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Recursos">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#abrirFormulario" text="Abrir" />
+                  <MenuItem mnemonicParsing="false" onAction="#cerrarListado" text="Cerrrar" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Formulario">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Abrir" text="Abrir" />
+                  <MenuItem mnemonicParsing="false" text="Salir" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Tutorial">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#abrirTutorial" text="abrir" />
+                  <MenuItem mnemonicParsing="false" text="Salir" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox fx:id="vboxMovimiento" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: orange;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Peluquería" textFill="#261c72">
+               <font>
+                  <Font name="Bodoni MT Black" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="402.0" fitWidth="567.0">
+               <image>
+                  <Image url="@Peluqueria.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets right="10.0" />
+         </opaqueInsets>
+      </VBox>
+   </center>
+</BorderPane>

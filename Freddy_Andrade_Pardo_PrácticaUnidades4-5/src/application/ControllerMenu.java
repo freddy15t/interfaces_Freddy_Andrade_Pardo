@@ -1,0 +1,148 @@
+package application;
+
+import java.io.IOException;
+
+import PaginaTres.MainLayouts_Controles;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+
+import javafx.scene.control.PasswordField;
+
+import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
+import javafx.scene.image.Image;
+
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
+
+import javafx.stage.Stage;
+import utilidades.Utilidades;
+
+
+public class ControllerMenu {
+	// Pantalla principal en la que se a�ade o quita contenido
+		private BorderPane rootLayout;
+		Image image2 = new Image(getClass(). getResourceAsStream("logo.jpg"));
+			        
+	    @FXML
+	    private Button entrar;
+	
+	    @FXML
+	    private PasswordField psw;
+
+	    @FXML
+	    private TextField usuario;
+	    
+	   
+	    
+	    PracticaMain main;
+
+
+	    
+	  @FXML
+	    private void initialize() {
+		 
+ 
+	    }
+	  
+	    public void setMain(PracticaMain main) {
+	        this.main = main;
+	        
+	    }
+	    
+	    String cadenaOpcion="";
+	    Utilidades util;
+	  
+	 
+	    @FXML
+	    void iniciarSesion(ActionEvent event) {
+	    	if(usuario.getText().equals("user") && psw.getText().equals("user")) {
+	    		main.abrirGeneral();
+	    		Stage ventana =(Stage) this.entrar.getScene().getWindow();
+				ventana.close();
+	    	}else {
+	    		 Alert alert = Utilidades.crearAlert(
+	    				 AlertType.ERROR, "ERROR", "Usuario o contrase�a incorrectos","vuelva a intentarlo" );
+	       	  alert.showAndWait();
+	    	}
+		}
+	    
+	    
+	    
+	    
+	    
+	    @FXML
+	    void abrirFormulario(ActionEvent event) {
+	    	try {
+				// Cargamos el archivo Controles Din�micos
+				FXMLLoader loader = new FXMLLoader();
+				loader.setLocation(ControllerMenu.class.getResource("/PaginaUno/ControlesPagUno.fxml"));
+				GridPane listadoControles = (GridPane) loader.load();
+
+				// Se sit�a en el centro del dise�o principal
+				rootLayout.setCenter(listadoControles);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
+	    }
+	    
+	    
+	    @FXML
+	    void Abrir(ActionEvent event) {
+	    	try {
+				FXMLLoader loader = new FXMLLoader();
+				loader.setLocation(MainLayouts_Controles.class.getResource("/PaginaDos/Control.fxml"));
+				GridPane abrirFormulario = (GridPane) loader.load();
+
+				// Se sit�a en el centro del dise�o principal
+				rootLayout.setCenter(abrirFormulario);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
+	    }
+	    
+	    
+
+	    @FXML
+	    void abrirTutorial(ActionEvent event) {
+	    	try {
+				FXMLLoader loader = new FXMLLoader();
+				loader.setLocation(MainLayouts_Controles.class.getResource("/PaginaTres/MainLayouts_Controles.fxml"));
+				BorderPane controlavanzado = (BorderPane) loader.load();
+
+				// Se sit�a en el centro del dise�o principal
+				rootLayout.setCenter(controlavanzado);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
+	    }
+
+	    
+	    @FXML
+	    private void cerrarListado(ActionEvent event) {    	
+	    	// Se elimina el contenido del nodo central
+	    	rootLayout.setCenter(null);	
+	    }
+	
+
+	
+	public BorderPane getRootLayout() {
+		return rootLayout;
+	}
+
+		// Necesario para poder cargar la escena
+	public void setRootLayout(BorderPane rootLayout) {
+		this.rootLayout = rootLayout;
+	}
+	
+	
+	
+	
+}
