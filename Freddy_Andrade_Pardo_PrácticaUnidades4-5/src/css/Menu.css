@@ -12,9 +12,14 @@
 
 .menu-bar .label {
     -fx-font-size: 12 pt;
+    -fx-background-color:yellow;
     -fx-text-fill: green;
-    -fx-font-weight: bold; 
     -fx-padding: 3px;
-
+    -fx-effect: dropshadow(three-pass-box, #000000, 10.0, 0, 0, 0);
+ 
+    
+   
 }
+
+
 

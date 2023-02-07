@@ -31,13 +31,10 @@ public class PracticaMain extends Application {
 	private BorderPane rootLayout;
 	  @FXML
 	    private VBox vboxMovimiento;
-	Image img1 = new Image(getClass(). getResourceAsStream("logo.jpg"));
-	Image img2 = new Image(getClass(). getResourceAsStream("logo.jpg"));
 
 	@Override
 	public void start(Stage primaryStage) { //esto es para las ventanas
 		this.primaryStage = primaryStage;
-		this.primaryStage.setTitle(" Práctica unidades 4-5 ");
 		iniciPrincipal();
 		
 	}
@@ -56,11 +53,9 @@ public class PracticaMain extends Application {
 			
 			// Mostramos la escena del BorderPane de la variable rootLayot
 			Scene scene = new Scene(rootLayout2);
-			primaryStage.getIcons().add(img1);
 			primaryStage.setScene(scene);
 			primaryStage.setResizable(false);
 			/*Manejador de rat�n sobre la escena iniciar sesi�n muestra el valor de donde pulsa*/
-			primaryStage.setTitle("Práctica unidades 4-5");
 			primaryStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -85,10 +80,8 @@ public class PracticaMain extends Application {
 			// Mostramos la escena del BorderPane de la variable rootLayot
 			Scene scene = new Scene(rootLayout);
 			Stage stage= new Stage();
-			stage.getIcons().add(img1);
 			stage.setScene(scene);
 			stage.setResizable(false);
-			stage.setTitle("Práctica unidades 4-5");
 			stage.show();
 			
 		

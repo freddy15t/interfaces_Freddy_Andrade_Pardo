@@ -20,7 +20,6 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 
 import javafx.stage.Stage;
-import utilidades.Utilidades;
 
 
 public class ControllerMenu {
@@ -42,6 +41,15 @@ public class ControllerMenu {
 	    PracticaMain main;
 
 
+	    public static  Alert crearAlert(AlertType type, String title, String header, String contextText) {
+	    	Alert auxAlert = new Alert(type);
+	    	
+	    	auxAlert.setTitle(title);
+	    	auxAlert.setHeaderText(header);
+	    	auxAlert.setContentText(contextText);
+	    	
+	    	return auxAlert;
+	    }
 	    
 	  @FXML
 	    private void initialize() {
@@ -55,17 +63,17 @@ public class ControllerMenu {
 	    }
 	    
 	    String cadenaOpcion="";
-	    Utilidades util;
+	    ControllerMenu util;
 	  
 	 
 	    @FXML
 	    void iniciarSesion(ActionEvent event) {
-	    	if(usuario.getText().equals("user") && psw.getText().equals("user")) {
+	    	if(usuario.getText().equals("") && psw.getText().equals("")) {
 	    		main.abrirGeneral();
 	    		Stage ventana =(Stage) this.entrar.getScene().getWindow();
 				ventana.close();
 	    	}else {
-	    		 Alert alert = Utilidades.crearAlert(
+	    		 Alert alert = ControllerMenu.crearAlert(
 	    				 AlertType.ERROR, "ERROR", "Usuario o contraseña incorrectos","vuelva a intentarlo" );
 	       	  alert.showAndWait();
 	    	}

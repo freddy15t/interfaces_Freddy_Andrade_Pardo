@@ -57,7 +57,7 @@
             <Insets left="10.0" />
          </padding>
       </Label>
-      <TableView fx:id="table1" fixedCellSize="30.0" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+      <TableView fx:id="table1" fixedCellSize="30.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/table-view.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
          
          <columns>
             <TableColumn fx:id="nombreC" prefWidth="75.0" text="Nombre " />

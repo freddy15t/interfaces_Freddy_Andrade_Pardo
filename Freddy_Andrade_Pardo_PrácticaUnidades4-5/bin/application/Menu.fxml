@@ -58,7 +58,7 @@
    <center>
       <VBox fx:id="vboxMovimiento" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: orange;" stylesheets="@../css/Menu.css" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="titulo" stylesheets="@../css/Menu.css" text="Peluquería" textFill="#261c72">
+            <Label fx:id="titulo" stylesheets="@../css/Menu.css" text="Peluquería" textFill="#2617ab">
                <font>
                   <Font name="Bodoni MT Black" size="30.0" />
                </font>
