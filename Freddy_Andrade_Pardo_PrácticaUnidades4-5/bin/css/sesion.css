@@ -1,0 +1,19 @@
+#labelusu{
+	-fx-pref-width:120;
+	-fx-pref-height:20;
+	-fx-text-fill:blue;
+	-fx-halignment:center;
+ -fx-font: bold italic 12pt "Arial";
+    -fx-text-alignment: center;
+    }
+
+#labelcontra{
+	-fx-pref-width:150;
+	-fx-pref-height:20;
+	-fx-text-fill:blue;
+	-fx-halignment:center;
+ -fx-font: bold italic 12pt "Arial";
+    -fx-text-alignment: center;
+	
+}
+

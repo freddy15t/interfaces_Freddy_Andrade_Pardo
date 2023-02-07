@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedAreaChart?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GraficoArea.AreaControlador">
+  <tabs>
+    <Tab text="Gráfico área tiempo de espera">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0">
+               <children>
+                  <AreaChart fx:id="graficoArea" layoutY="-6.0" style="-fx-background-color: #bababa;" title="Tiempo de espera del turno">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" tickLabelFill="#101b83" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" tickLabelFill="#0e1672" tickLabelGap="5.0" tickLength="10.0" />
+                    </yAxis>
+                  </AreaChart>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Gráfico tiempo espera modo apilado">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <StackedAreaChart fx:id="graficoAreaApilada" style="-fx-background-color: #bababa;">
+                    <xAxis>
+                      <NumberAxis side="BOTTOM" tickLabelFill="#0c0e4f" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" tickLabelFill="#171075" tickLabelGap="5.0" />
+                    </yAxis>
+                  </StackedAreaChart>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GraficoCircular.ControladorCircular">
+   <children>
+      <PieChart fx:id="GraficoCircular" labelLineLength="50.0" legendSide="LEFT" title="Cortes de pelo" />
+   </children>
+</AnchorPane>

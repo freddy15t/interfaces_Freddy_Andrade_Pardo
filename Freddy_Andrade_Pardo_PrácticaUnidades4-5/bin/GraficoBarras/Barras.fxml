@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GraficoBarras.ControladorBarras">
+  <tabs>
+    <Tab text="Gráfico de barras">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="500.0">
+               <children>
+                  <BarChart fx:id="graficoBarras" barGap="6.0" categoryGap="4.0" title="Grafico con más peluquerías">
+                    <xAxis>
+                      <CategoryAxis fx:id="barraEjex" animated="false" autoRanging="false" label="País" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis animated="false" label="Valores de países" side="LEFT" tickLabelFill="#0b2a9a" tickLabelGap="8.0" />
+                    </yAxis>
+                  </BarChart>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Gráfico de barras apilado">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0">
+               <children>
+                  <StackedBarChart fx:id="graficoBarrasApilado" categoryGap="50.0" title="Gráfica con más peluquerías">
+                    <xAxis>
+                      <CategoryAxis fx:id="ejeXApilado" label="Países con más peluquerías" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis label="Total de pelqueiras" side="LEFT" />
+                    </yAxis>
+                  </StackedBarChart>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

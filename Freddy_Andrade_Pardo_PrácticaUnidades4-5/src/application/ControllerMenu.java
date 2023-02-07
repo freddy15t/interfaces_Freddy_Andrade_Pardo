@@ -11,11 +11,11 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 
 import javafx.scene.control.PasswordField;
-
+import javafx.scene.control.TabPane;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.image.Image;
-
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 
@@ -66,7 +66,7 @@ public class ControllerMenu {
 				ventana.close();
 	    	}else {
 	    		 Alert alert = Utilidades.crearAlert(
-	    				 AlertType.ERROR, "ERROR", "Usuario o contrase�a incorrectos","vuelva a intentarlo" );
+	    				 AlertType.ERROR, "ERROR", "Usuario o contraseña incorrectos","vuelva a intentarlo" );
 	       	  alert.showAndWait();
 	    	}
 		}
@@ -130,6 +130,61 @@ public class ControllerMenu {
 	    	// Se elimina el contenido del nodo central
 	    	rootLayout.setCenter(null);	
 	    }
+	    
+	    
+	    
+	    
+	    @FXML
+	    void abrirGrafArea(ActionEvent event) {
+	    	try {
+				FXMLLoader loader = new FXMLLoader();
+				loader.setLocation(PracticaMain.class.getResource("/GraficoArea/Area.fxml"));
+				TabPane tutorial=(TabPane) loader.load();
+				tutorial.getStylesheets().add("css/area.css");
+				rootLayout.setCenter(tutorial);
+				
+
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+	    }
+
+	    @FXML
+	    void abrirGrafBarras(ActionEvent event) {
+	    	try {
+				FXMLLoader loader = new FXMLLoader();
+				loader.setLocation(PracticaMain.class.getResource("/GraficoBarras/Barras.fxml"));
+				TabPane tutorial=(TabPane) loader.load();
+				tutorial.getStylesheets().add("css/bar.css");
+				rootLayout.setCenter(tutorial);
+				
+
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+	    }
+
+	    @FXML
+	    void abrirGrafCirculares(ActionEvent event) {
+	    	try {
+				FXMLLoader loader = new FXMLLoader();
+				loader.setLocation(PracticaMain.class.getResource("/GraficoCircular/Circular.fxml"));
+				AnchorPane tutorial=(AnchorPane) loader.load();
+				tutorial.getStylesheets().add("css/Circular.css");
+				rootLayout.setCenter(tutorial);
+				
+
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	    }
+	    
+	    
 	
 
 	

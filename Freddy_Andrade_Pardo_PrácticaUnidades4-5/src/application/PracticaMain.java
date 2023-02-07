@@ -60,14 +60,6 @@ public class PracticaMain extends Application {
 			primaryStage.setScene(scene);
 			primaryStage.setResizable(false);
 			/*Manejador de rat�n sobre la escena iniciar sesi�n muestra el valor de donde pulsa*/
-			scene.setOnMouseClicked(
-			        new EventHandler<MouseEvent>() {
-
-			            @Override
-			            public void handle(MouseEvent event) {
-			           System.out.println(event.getPickResult());
-			            }
-			          });
 			primaryStage.setTitle("Práctica unidades 4-5");
 			primaryStage.show();
 		} catch (Exception e) {

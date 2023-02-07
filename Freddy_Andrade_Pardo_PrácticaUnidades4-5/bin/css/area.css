@@ -1,0 +1,11 @@
+/* Estilo de los símbolos del gráfico */
+.default-color0.chart-area-symbol { -fx-background-color: blue, red; }
+.default-color1.chart-area-symbol { -fx-background-color: blue, yellow; }
+ 
+/* Estilo de la línea del gráfico */
+.default-color0.chart-series-area-line { -fx-stroke: brown; }
+.default-color1.chart-series-area-line { -fx-stroke: brown; }
+ 
+ /* Estilos del releno del gráfico */
+.default-color0.chart-series-area-fill { -fx-fill: #c0d945; }
+.default-color1.chart-series-area-fill { -fx-fill: #fffacd55; }
