@@ -1,11 +1,11 @@
-/* Estilos de cada sección del PieChart */
+/* Estilos de cada seccion del PieChart */
 .default-color0.chart-pie { -fx-background-color: green; }
 .default-color1.chart-pie { -fx-background-color: red; }
 .default-color2.chart-pie { -fx-background-color: purple; }
 .default-color3.chart-pie { -fx-background-color: yellow; }
 .default-color4.chart-pie { -fx-background-color: grey; }
  
-/* Estilos generales de las líneas con las etiquetas que marcan los datos */
+/* Estilos generales de las lï¿½neas con las etiquetas que marcan los datos */
 .chart-pie-label-line {
     -fx-stroke: #8b4513;
     -fx-fill: #8b4513;
@@ -25,7 +25,7 @@
    -fx-pref-height: 130px;
 }
 
-/* Se cambia el primer símbolo de la leyenda del gráfico */
+/* Se cambia el primer sï¿½mbolo de la leyenda del grï¿½fico */
 .default-color0.pie-legend-symbol{
 	-fx-background-color: yellow;
 }

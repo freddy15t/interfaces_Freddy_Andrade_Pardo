@@ -80,9 +80,7 @@ public class ControllerMenu {
 		}
 	    
 	    
-	    
-	    
-	    
+	        
 	    @FXML
 	    void abrirFormulario(ActionEvent event) {
 	    	try {
@@ -194,7 +192,6 @@ public class ControllerMenu {
 	    
 	    
 	
-
 	
 	public BorderPane getRootLayout() {
 		return rootLayout;

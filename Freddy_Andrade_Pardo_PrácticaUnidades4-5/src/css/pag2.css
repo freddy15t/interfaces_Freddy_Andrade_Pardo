@@ -1,0 +1,29 @@
+
+.button{
+    -fx-text-fill:blue;
+    -fx-font-size: 20px;
+    -fx-border-color:orange;
+    -fx-border-radius: 40;
+    -fx-padding: 3 6 6 6;
+}
+
+
+#GridPane{
+	-fx-border-insets: 20,15;
+	-fx-border-width: 5;
+	-fx-border-color: red, green;
+	-fx-border-radius: 10, 0;
+	-fx-background-color: blue;
+	-fx-background-insets: 10;
+	-fx-background-radius: 20, 0;
+}
+
+
+/* Cuando nos posicionamos en el botton de la sección inferior SEUDOCLASE */
+#inferior .button:hover{
+	-fx-opacity: 0.5;
+		-fx-background-color: white;
+	
+	
+}
+

@@ -1,9 +1,4 @@
 package application;
-	
-
-
-
-
 import javafx.application.Application;
 
 import javafx.event.EventHandler;
@@ -21,8 +16,6 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 
 import javafx.stage.Stage;
-
-
 
 public class PracticaMain extends Application {
 	 private Stage primaryStage;

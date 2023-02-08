@@ -53,17 +53,23 @@
                </items>
             </Menu>
         </menus>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" top="5.0" />
+         </padding>
       </MenuBar>
    </top>
    <center>
-      <VBox fx:id="vboxMovimiento" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: orange;" stylesheets="@../css/Menu.css" BorderPane.alignment="CENTER">
+      <VBox fx:id="vboxMovimiento" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="-fx-background-color: orange;" stylesheets="@../css/Menu.css" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="titulo" stylesheets="@../css/Menu.css" text="Peluquería" textFill="#2617ab">
+            <Label id="titulo" fx:id="titulo" stylesheets="@../css/Menu.css" text="Peluquería">
                <font>
                   <Font name="Bodoni MT Black" size="30.0" />
                </font>
                <VBox.margin>
-                  <Insets right="10.0" />
+                  <Insets bottom="20.0" />
                </VBox.margin>
                <padding>
                   <Insets bottom="15.0" />

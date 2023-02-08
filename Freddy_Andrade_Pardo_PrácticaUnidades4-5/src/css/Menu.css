@@ -1,25 +1,26 @@
 .menu-bar {
     -fx-background-color: lightblue ;
 	-fx-pref-height:20px;
+	-fx-pref-width:40%
 
 }
 
+ 
+	    
 #titulo{
-		-fx-text-fill:blue;
-	    -fx-background-color: lightgreen ;
+  -fx-background-color: linear-gradient(to right, red, yellow);
+	   -fx-text-fill:grey;
 	    
 }
+	    
+
 
 .menu-bar .label {
     -fx-font-size: 12 pt;
-    -fx-background-color:yellow;
-    -fx-text-fill: green;
+    -fx-text-fill: white;
     -fx-padding: 3px;
     -fx-effect: dropshadow(three-pass-box, #000000, 10.0, 0, 0, 0);
- 
+    -fx-background-color: linear-gradient(from 41px 34px to 50px 50px, reflect,   blue  20%, #C42441 20%);
     
-   
 }
-
-
 

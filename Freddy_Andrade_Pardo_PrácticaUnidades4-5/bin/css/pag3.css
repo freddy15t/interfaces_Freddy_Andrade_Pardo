@@ -1,0 +1,27 @@
+
+/* Degradado en el fondo del pie de página */
+#pie{
+	-fx-background-color: linear-gradient(from 25% 25%  to 100% 100%, #FFF333, #3383FF ,#FF333C );
+}
+
+
+
+.button{
+    -fx-text-fill:blue;
+    -fx-font-size: 20px;
+    -fx-border-color:#C6AF1D;
+    -fx-border-radius: 40;
+    -fx-padding: 3 6 6 6;
+}
+
+
+
+
+.slider{
+	-fx-border-color: brown;
+    -fx-border-style: dashed;
+    -fx-border-width: 5;
+}
+ 
+ 
+
