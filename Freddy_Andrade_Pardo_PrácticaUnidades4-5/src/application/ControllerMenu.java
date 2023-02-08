@@ -2,7 +2,7 @@ package application;
 
 import java.io.IOException;
 
-import PaginaTres.MainLayouts_Controles;
+import PaginaTres.MainpagTres;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -23,7 +23,7 @@ import javafx.stage.Stage;
 
 
 public class ControllerMenu {
-	// Pantalla principal en la que se a�ade o quita contenido
+	// Pantalla principal en la que se anade o quita contenido
 		private BorderPane rootLayout;
 		Image image2 = new Image(getClass(). getResourceAsStream("logo.jpg"));
 			        
@@ -35,10 +35,7 @@ public class ControllerMenu {
 
 	    @FXML
 	    private TextField usuario;
-	    
-	   
-	    
-	    PracticaMain main;
+	    MainApp main;
 
 
 	    public static  Alert crearAlert(AlertType type, String title, String header, String contextText) {
@@ -51,19 +48,12 @@ public class ControllerMenu {
 	    	return auxAlert;
 	    }
 	    
-	  @FXML
-	    private void initialize() {
-		 
- 
-	    }
+	
 	  
-	    public void setMain(PracticaMain main) {
-	        this.main = main;
-	        
+	    public void setMainApp(MainApp main) {
+	        this.main = main;   
 	    }
 	    
-	    String cadenaOpcion="";
-	    ControllerMenu util;
 	  
 	 
 	    @FXML
@@ -86,7 +76,7 @@ public class ControllerMenu {
 	    	try {
 				// Cargamos el archivo Controles Din�micos
 				FXMLLoader loader = new FXMLLoader();
-				loader.setLocation(ControllerMenu.class.getResource("/PaginaUno/ControlesPagUno.fxml"));
+				loader.setLocation(ControllerMenu.class.getResource("/PaginaUno/Cliente.fxml"));
 				GridPane listadoControles = (GridPane) loader.load();
 
 				// Se sit�a en el centro del dise�o principal
@@ -102,7 +92,7 @@ public class ControllerMenu {
 	    void Abrir(ActionEvent event) {
 	    	try {
 				FXMLLoader loader = new FXMLLoader();
-				loader.setLocation(MainLayouts_Controles.class.getResource("/PaginaDos/Control.fxml"));
+				loader.setLocation(MainpagTres.class.getResource("/PaginaDos/Control.fxml"));
 				GridPane abrirFormulario = (GridPane) loader.load();
 
 				// Se sit�a en el centro del dise�o principal
@@ -119,7 +109,7 @@ public class ControllerMenu {
 	    void abrirTutorial(ActionEvent event) {
 	    	try {
 				FXMLLoader loader = new FXMLLoader();
-				loader.setLocation(MainLayouts_Controles.class.getResource("/PaginaTres/MainLayouts_Controles.fxml"));
+				loader.setLocation(MainpagTres.class.getResource("/PaginaTres/MainpagTres.fxml"));
 				BorderPane controlavanzado = (BorderPane) loader.load();
 
 				// Se sit�a en el centro del dise�o principal
@@ -144,7 +134,7 @@ public class ControllerMenu {
 	    void abrirGrafArea(ActionEvent event) {
 	    	try {
 				FXMLLoader loader = new FXMLLoader();
-				loader.setLocation(PracticaMain.class.getResource("/GraficoArea/Area.fxml"));
+				loader.setLocation(MainApp.class.getResource("/GraficoArea/Area.fxml"));
 				TabPane tutorial=(TabPane) loader.load();
 				tutorial.getStylesheets().add("css/area.css");
 				rootLayout.setCenter(tutorial);
@@ -161,7 +151,7 @@ public class ControllerMenu {
 	    void abrirGrafBarras(ActionEvent event) {
 	    	try {
 				FXMLLoader loader = new FXMLLoader();
-				loader.setLocation(PracticaMain.class.getResource("/GraficoBarras/Barras.fxml"));
+				loader.setLocation(MainApp.class.getResource("/GraficoBarras/Barras.fxml"));
 				TabPane tutorial=(TabPane) loader.load();
 				tutorial.getStylesheets().add("css/bar.css");
 				rootLayout.setCenter(tutorial);
@@ -178,20 +168,18 @@ public class ControllerMenu {
 	    void abrirGrafCirculares(ActionEvent event) {
 	    	try {
 				FXMLLoader loader = new FXMLLoader();
-				loader.setLocation(PracticaMain.class.getResource("/GraficoCircular/Circular.fxml"));
+				loader.setLocation(MainApp.class.getResource("/GraficoCircular/Circular.fxml"));
 				AnchorPane tutorial=(AnchorPane) loader.load();
 				tutorial.getStylesheets().add("css/Circular.css");
 				rootLayout.setCenter(tutorial);
 				
 
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 	    }
 	    
 	    
-	
 	
 	public BorderPane getRootLayout() {
 		return rootLayout;
