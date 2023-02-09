@@ -14,7 +14,7 @@
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0">
                <children>
-                  <AreaChart fx:id="graficoArea" layoutY="-6.0" style="-fx-background-color: #bababa;" title="Tiempo de espera del turno">
+                  <AreaChart id="espera" fx:id="graficoArea" layoutY="-6.0" style="-fx-background-color: #bababa;" title="Tiempo de espera del turno">
                     <xAxis>
                       <CategoryAxis side="BOTTOM" tickLabelFill="#101b83" />
                     </xAxis>

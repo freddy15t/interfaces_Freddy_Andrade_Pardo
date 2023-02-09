@@ -12,7 +12,7 @@ import javafx.scene.chart.XYChart;
 /**
  * 
  * @author Freddy Andrade Pardo
- *
+ * * @version 1.0
  */
 public class ControladorBarras {
 

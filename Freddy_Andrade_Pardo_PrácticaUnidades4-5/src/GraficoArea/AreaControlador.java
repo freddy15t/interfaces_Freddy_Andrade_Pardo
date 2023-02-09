@@ -8,7 +8,8 @@ import javafx.scene.chart.XYChart;
 /**
  * 
  * @author Freddy Andrade Pardo
- *
+  * @version 1.0
+
  */
 public class AreaControlador {
 
@@ -55,6 +56,7 @@ public class AreaControlador {
 		graficoArea.getData().add(seriesMay);
 	}
 
+	
 	private void iniciarStackedAreaChart() {
 		// Para los StackedAreaChart, SceneBuilder obliga a emplear dos NumberAxis cuyos
 		// valores deben

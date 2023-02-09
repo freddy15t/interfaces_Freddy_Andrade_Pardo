@@ -18,9 +18,9 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 /**
- * 
+ * Clase Main donde se inicia la aplicación
  * @author Freddy Andrade Pardo
- *
+ * @version 1.0
  */
 public class MainApp extends Application {
 	

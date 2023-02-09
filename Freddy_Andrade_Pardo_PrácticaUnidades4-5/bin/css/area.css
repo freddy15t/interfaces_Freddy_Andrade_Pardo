@@ -9,3 +9,26 @@
  /* Estilos del releno del grafico */
 .default-color0.chart-series-area-fill { -fx-fill: #c0d945; }
 .default-color1.chart-series-area-fill { -fx-fill: #fffacd55; }
+
+/* Estilos generales del área de la leyenda del gráfico */
+.chart-legend {
+ -fx-background-color: lightgreen;
+ -fx-padding: 30px;
+}
+
+/* Estilos generales de la etiqueta de la leyenda del gráfico */
+.chart-legend-item{
+ -fx-text-fill: grey;
+}
+
+/* Estilos generales del gráfico. Hereda todos los de estilos Region */
+.chart {
+ -fx-padding: 10px;
+ -fx-background-color: lightblue;
+}
+
+#espera{
+	-fx-fill: black;
+	-fx-font: bold italic 12pt "Arial";
+	
+}

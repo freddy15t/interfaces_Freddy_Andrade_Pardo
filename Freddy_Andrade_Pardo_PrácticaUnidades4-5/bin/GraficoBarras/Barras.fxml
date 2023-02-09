@@ -14,7 +14,7 @@
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="500.0">
                <children>
-                  <BarChart fx:id="graficoBarras" barGap="6.0" categoryGap="4.0" title="Grafico con más peluquerías">
+                  <BarChart id="grafBarras" fx:id="graficoBarras" barGap="6.0" categoryGap="4.0" title="Grafico con más peluquerías">
                     <xAxis>
                       <CategoryAxis fx:id="barraEjex" animated="false" autoRanging="false" label="País" />
                     </xAxis>
@@ -29,7 +29,7 @@
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0">
                <children>
-                  <StackedBarChart fx:id="graficoBarrasApilado" categoryGap="50.0" title="Gráfica con más peluquerías">
+                  <StackedBarChart id="grafBarras" fx:id="graficoBarrasApilado" categoryGap="50.0" title="Gráfica con más peluquerías">
                     <xAxis>
                       <CategoryAxis fx:id="ejeXApilado" label="Países con más peluquerías" side="BOTTOM" />
                     </xAxis>

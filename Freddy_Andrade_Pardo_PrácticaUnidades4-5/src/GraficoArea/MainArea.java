@@ -11,11 +11,13 @@ import javafx.stage.Stage;
 /**
  * 
  * @author Freddy Andrade Pardo
- *
+ * @version 1.0
+
  */
 public class MainArea extends Application {
 	private Stage primaryStage;
 	
+
 	@Override
 	public void start(Stage primaryStage) {
 		try {
@@ -47,7 +49,7 @@ public class MainArea extends Application {
 
 	/**
 	 * 
-	 * @param args es lo principal para que funcioone
+	 * @param args es lo principal para que funcione
 	 */
 	public static void main(String[] args) {
 		launch(args);

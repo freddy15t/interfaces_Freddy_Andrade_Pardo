@@ -9,9 +9,10 @@ import javafx.stage.Stage;
 /**
  * 
  * @author Freddy Andrade Pardo
- *
+  * @version 1.0
  */
 public class MainpagTres extends Application {
+	
 	private BorderPane rootLayout;
 
 	@Override

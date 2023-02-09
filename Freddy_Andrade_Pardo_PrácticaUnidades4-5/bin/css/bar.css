@@ -45,3 +45,9 @@
 	-fx-background-color: red;
 }
 
+#grafBarras{
+		    -fx-fill: black;
+	     -fx-font: bold italic 12pt "Arial";
+	
+	
+}

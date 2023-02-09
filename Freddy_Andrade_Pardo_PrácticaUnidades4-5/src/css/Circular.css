@@ -14,18 +14,32 @@
  /* Estilos del texto con la etiqueta de datos */
 .chart-pie-label {
     -fx-fill: blue;
-    -fx-font-size: 0.8em;
+     -fx-font: bold italic 12pt "Arial";
+    
 } 
 
 /* Estilos del recuadro con la leyenda de los datos */
 .chart-legend {
    -fx-background-color: #C5D357;
    -fx-border-color: red;
-   -fx-border-width: 1px;
+   -fx-border-width: 5px;
    -fx-pref-height: 130px;
+   
 }
 
 /* Se cambia el primer s�mbolo de la leyenda del gr�fico */
 .default-color0.pie-legend-symbol{
 	-fx-background-color: yellow;
+}
+
+/* Estilos generales del gráfico. Hereda todos los de estilos Region */
+.chart {
+ -fx-padding: 10px;
+ -fx-background-color: lightblue;
+}
+
+#cortes{
+	    -fx-fill: black;
+	     -fx-font: bold italic 12pt "Arial";
+	
 }

@@ -24,7 +24,7 @@ import javafx.stage.Stage;
 /**
  * 
  * @author freddy Andrade Pardo
- *
+  * @version 1.0
  */
 public class ControllerMenu {
 	// Pantalla principal en la que se anade o quita contenido

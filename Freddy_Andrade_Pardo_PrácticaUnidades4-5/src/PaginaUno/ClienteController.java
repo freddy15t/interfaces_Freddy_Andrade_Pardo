@@ -18,6 +18,7 @@ import javafx.scene.control.cell.TextFieldTreeCell;
 /**
  * 
  * @author Freddy Andrade Pardo
+  * @version 1.0
  *
  */
 public class ClienteController {

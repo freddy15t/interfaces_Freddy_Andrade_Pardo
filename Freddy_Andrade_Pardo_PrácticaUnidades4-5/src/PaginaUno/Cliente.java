@@ -6,7 +6,7 @@ import javafx.beans.property.SimpleStringProperty;
 /**
  * 
  * @author Freddy Andrade Pardo
- *
+  * @version 1.0
  */
 public class Cliente {
 	
@@ -17,10 +17,10 @@ public class Cliente {
  
     /**
      * 
-     * @param fName
-     * @param lName
-     * @param email
-     * @param age
+     * @param fName para el nombre
+     * @param lName para el apellido
+     * @param email para el correo
+     * @param age para la edad 
      */
     public Cliente(String fName, String lName, String email, Integer age) {
         this.nombre = new SimpleStringProperty(fName);

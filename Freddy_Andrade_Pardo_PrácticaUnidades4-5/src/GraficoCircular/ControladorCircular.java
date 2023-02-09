@@ -8,7 +8,7 @@ import javafx.scene.chart.PieChart;
 /**
  * 
  * @author Freddy Andrade Pardo
- *
+  * @version 1.0
  */
 public class ControladorCircular {
 
