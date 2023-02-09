@@ -35,7 +35,7 @@
    <left>
       <VBox prefHeight="381.0" prefWidth="233.0" spacing="5.0" BorderPane.alignment="CENTER">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="INFORMACIÓN">
+            <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="INFORMACIÓN">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>

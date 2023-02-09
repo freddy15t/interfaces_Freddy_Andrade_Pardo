@@ -24,3 +24,9 @@
     
 }
 
+
+
+/* importante */
+#desabilitado{
+	-fx-background-color: salmon;
+}

@@ -1,7 +1,9 @@
 #labelusu{
 	-fx-pref-width:120;
 	-fx-pref-height:20;
-	-fx-text-fill:blue;
+	-fx-text-fill:grey;
+	-fx-opacity: 0.5;
+	
 	-fx-halignment:center;
  -fx-font: bold italic 12pt "Arial";
     -fx-text-alignment: center;
@@ -10,10 +12,18 @@
 #labelcontra{
 	-fx-pref-width:150;
 	-fx-pref-height:20;
-	-fx-text-fill:blue;
+	-fx-text-fill:grey;
+	-fx-opacity: 0.5;
 	-fx-halignment:center;
  -fx-font: bold italic 12pt "Arial";
     -fx-text-alignment: center;
 	
 }
 
+.button{
+	-fx-background-color:aquamarine;
+    -fx-text-fill:brown;
+    -fx-font-size: 15px;
+    -fx-border-color:red;
+    -fx-border-radius: 5;
+}

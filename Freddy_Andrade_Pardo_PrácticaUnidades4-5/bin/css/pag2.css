@@ -1,9 +1,9 @@
-
 .button{
     -fx-text-fill:blue;
     -fx-font-size: 20px;
+    -fx-background-color:lightgreen;
     -fx-border-color:orange;
-    -fx-border-radius: 40;
+    -fx-border-radius: 8;
     -fx-padding: 3 6 6 6;
 }
 
@@ -19,11 +19,13 @@
 }
 
 
-/* Cuando nos posicionamos en el botton de la sección inferior SEUDOCLASE */
-#inferior .button:hover{
-	-fx-opacity: 0.5;
-		-fx-background-color: white;
-	
-	
+
+.check-box:selected{
+	-fx-text-fill: #2480C4;
+	-fx-background-color: #24C42E;	
+}
+
+.radio-button:selected{
+	-fx-underline: true;
 }
 

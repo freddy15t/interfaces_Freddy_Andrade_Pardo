@@ -72,7 +72,7 @@
             </RadialGradient>
          </textFill>
       </Label>
-      <Button fx:id="entrar" contentDisplay="RIGHT" defaultButton="true" mnemonicParsing="false" onAction="#iniciarSesion" style="-fx-background-color: lightgreen;" text="Entrar" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+      <Button fx:id="entrar" contentDisplay="RIGHT" defaultButton="true" mnemonicParsing="false" onAction="#iniciarSesion" stylesheets="@../css/sesion.css" text="Entrar" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
          <font>
             <Font size="15.0" />
          </font>

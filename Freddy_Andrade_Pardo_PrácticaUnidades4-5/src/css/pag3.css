@@ -7,10 +7,11 @@
 
 
 .button{
-    -fx-text-fill:blue;
+    -fx-text-fill:#8024C4;
+    -fx-background-color:#24C4AC;
     -fx-font-size: 20px;
-    -fx-border-color:#C6AF1D;
-    -fx-border-radius: 40;
+    -fx-border-color:red;
+    -fx-border-radius: 8;
     -fx-padding: 3 6 6 6;
 }
 
@@ -18,10 +19,16 @@
 
 
 .slider{
-	-fx-border-color: brown;
+	-fx-border-color: white;
     -fx-border-style: dashed;
-    -fx-border-width: 5;
+    -fx-border-width: 4;
 }
  
  
 
+#text{
+ -fx-text-fill:red;
+     -fx-background-color:#24C4AC;
+ 
+	
+}

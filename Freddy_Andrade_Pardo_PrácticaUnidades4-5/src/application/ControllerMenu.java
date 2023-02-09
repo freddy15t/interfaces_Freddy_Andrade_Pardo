@@ -58,7 +58,7 @@ public class ControllerMenu {
 	 
 	    @FXML
 	    void iniciarSesion(ActionEvent event) {
-	    	if(usuario.getText().equals("user") && psw.getText().equals("user")) {
+	    	if(usuario.getText().equals("") && psw.getText().equals("")) {
 	    		main.abrirGeneral();
 	    		Stage ventana =(Stage) this.entrar.getScene().getWindow();
 				ventana.close();
