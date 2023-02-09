@@ -5,7 +5,11 @@ import javafx.scene.chart.AreaChart;
 import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.StackedAreaChart;
 import javafx.scene.chart.XYChart;
-
+/**
+ * 
+ * @author Freddy Andrade Pardo
+ *
+ */
 public class AreaControlador {
 
 	@FXML
@@ -26,9 +30,9 @@ public class AreaControlador {
 	private void iniciarAreaChart() {
 		// Para los AreaChart, SceneBuilder obliga a emplear un CategoryAxis cuyos
 		// valores deben ser String
-		// aunque sean números. Es posible indicar las categorías con el método
+		// aunque sean numeros. Es posible indicar las categorias con el mï¿½todo
 		// setCategories de xAxis
-		// pero si no se indica se crea automáticamente según los datos de las series
+		// pero si no se indica se crea automaticamente segun los datos de las series
 
 		// Se crean dos series con datos de grafico area
 
@@ -46,7 +50,7 @@ public class AreaControlador {
 		seriesMay.getData().add(new XYChart.Data<String, Integer>("5", 10));
 		seriesMay.getData().add(new XYChart.Data<String, Integer>("9", 7));
 
-		// Se añaden las series al gráfico de tipo AreaChart
+		// Se anaden las series al grafico de tipo AreaChart
 		graficoArea.getData().add(seriesApril);
 		graficoArea.getData().add(seriesMay);
 	}
@@ -71,7 +75,7 @@ public class AreaControlador {
 		seriesMay.getData().add(new XYChart.Data<Integer, Integer>(5, 13));
 		seriesMay.getData().add(new XYChart.Data<Integer, Integer>(8, 10));
 
-		// Se añaden las series al gráfico de tipo AreaChart
+		// Se anaden las series al grafico de tipo AreaChart
 		graficoAreaApilada.getData().add(seriesApril);
 		graficoAreaApilada.getData().add(seriesMay);
 	}

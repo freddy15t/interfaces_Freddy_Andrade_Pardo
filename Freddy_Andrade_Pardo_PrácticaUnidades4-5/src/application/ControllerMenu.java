@@ -236,6 +236,10 @@ public class ControllerMenu {
 		return rootLayout;
 	}
 
+	/**
+	 * 
+	 * @param rootLayout necesario para cargar la escena
+	 */
 		// Necesario para poder cargar la escena
 	public void setRootLayout(BorderPane rootLayout) {
 		this.rootLayout = rootLayout;

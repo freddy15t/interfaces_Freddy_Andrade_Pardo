@@ -7,6 +7,11 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+/**
+ * 
+ * @author Freddy Andrade Pardo
+ *
+ */
 public class MainCircular extends Application {
 	private Stage primaryStage;
 
@@ -17,10 +22,10 @@ public class MainCircular extends Application {
 			this.primaryStage = primaryStage;
 			this.primaryStage.setTitle("Grafico circular");
 			
-			 // Icono de la aplicaci�n
+			 // Icono de la aplicacion
 		    this.primaryStage.getIcons().add(new Image("file:img/graficoCircular.jpg"));
 			
-			// Carga el XML con el dise�o principal
+			// Carga el XML con el diseno principal
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MainCircular.class.getResource("Circular.fxml"));
 			AnchorPane rootLayout = (AnchorPane) loader.load();
@@ -28,7 +33,7 @@ public class MainCircular extends Application {
 			// Descomentar para ver CSS
 			rootLayout.getStylesheets().addAll(this.getClass().getResource("Circular.css").toExternalForm());
 
-			// Se a�ade el dise�o principal a la escena
+			// Se anade el diseno principal a la escena
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
 			primaryStage.show();
@@ -37,6 +42,10 @@ public class MainCircular extends Application {
 		}
 	}
 
+	/**
+	 * 
+	 * @param args es lo principal para que funcioone
+	 */
 	public static void main(String[] args) {
 		launch(args);
 	}

@@ -7,6 +7,11 @@ import javafx.scene.control.TabPane;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
+/**
+ * 
+ * @author Freddy Andrade Pardo
+ *
+ */
 public class MainBarras extends Application {
 	private Stage primaryStage;
 
@@ -15,13 +20,13 @@ public class MainBarras extends Application {
 		try {
 			
 			this.primaryStage = primaryStage;
-			this.primaryStage.setTitle("Gráfico de barras");
-			 // Icono de la aplicación
+			this.primaryStage.setTitle("Grï¿½fico de barras");
+			 // Icono de la aplicaciï¿½n
 		    this.primaryStage.getIcons().add(new Image("file:img/graficoBarras.jpg"));
 			
 			
 			
-			// Carga el XML con el diseño principal
+			// Carga el XML con el diseï¿½o principal
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MainBarras.class.getResource("Barras.fxml"));
 			TabPane rootLayout = (TabPane) loader.load();
@@ -29,7 +34,7 @@ public class MainBarras extends Application {
 			// Descomentar para ver CSS
 			rootLayout.getStylesheets().addAll(this.getClass().getResource("bar.css").toExternalForm());
 
-			// Se añade el diseño principal a la escena
+			// Se aï¿½ade el diseï¿½o principal a la escena
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
 			primaryStage.show();
@@ -38,6 +43,10 @@ public class MainBarras extends Application {
 		}
 	}
 
+	/**
+	 * 
+	 * @param args es lo principal para que funcioone
+	 */
 	public static void main(String[] args) {
 		launch(args);
 	}

@@ -6,14 +6,19 @@ import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-
+/**
+ * 
+ * @author Freddy Andrade Pardo
+ *
+ */
 public class Main extends Application {
+	
 	private GridPane rootLayout;	
 	
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			// Carga el diseño del archivo FXML en la variable rootLayout
+			// Carga el diseno del archivo FXML en la variable rootLayout
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("Control.fxml"));
 			rootLayout = (GridPane) loader.load();				
@@ -21,13 +26,17 @@ public class Main extends Application {
 			// Mostramos la escena del BorderPane de la variable rootLayot
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
-			primaryStage.setTitle("Ejemplo sobre controles");
+			primaryStage.setTitle("Formulario");
 			primaryStage.show();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 	
+	/**
+	 * 
+	 * @param args para que funcione
+	 */
 	public static void main(String[] args) {
 		launch(args);
 	}

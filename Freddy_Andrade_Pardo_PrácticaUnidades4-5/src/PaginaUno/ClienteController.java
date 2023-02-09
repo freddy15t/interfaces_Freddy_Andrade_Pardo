@@ -15,7 +15,13 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldListCell;
 import javafx.scene.control.cell.TextFieldTreeCell;
 
+/**
+ * 
+ * @author Freddy Andrade Pardo
+ *
+ */
 public class ClienteController {
+
 
     @FXML
     private ChoiceBox<String> choice1;
@@ -44,6 +50,7 @@ public class ClienteController {
     @FXML
     private TreeView<String> tree1;
     
+    
      // Lista auxiliar para TableView
     private ObservableList<Cliente> data = FXCollections.observableArrayList(
     	    new Cliente("Luis", "P�rez", "luispz@gmail.com", 645326352),
@@ -55,19 +62,19 @@ public class ClienteController {
 
     @FXML
     private void initialize() {   
-        // Controles de JavaFX a los que se a�aden directamente los items 
-    	// �tems del ChoiceBox
-        choice1.getItems().addAll("Corte cl�sico", "Corte militar ", "Corte Undercut", "Corte fade",
+        // Controles de JavaFX a los que se anaden directamente los items 
+    	// Items del ChoiceBox
+        choice1.getItems().addAll("Corte clasico", "Corte militar ", "Corte Undercut", "Corte fade",
         		"Corte taper", "Corte degrafilado", "Corte comb over", 
         		"Corte hongo", "Corte mohicano", "corte degradado");      
         
-        // �tems del ComboBox
+        // Items del ComboBox
         combo1.getItems().addAll("Acondicionador de cabello", "Fijador para el pelo", "Champ�", 
         		"Laca para el cabello", "Tinte para el cabello", "Crema de afeitar",
         		"Jab�n de afeitar");
                 
         
-        
+ 
         // Asociamos cada columna del TableView a una propiedad de la clase Person 
         nombreC.setCellValueFactory(new PropertyValueFactory<Cliente,String>("nombre"));
         apellidoC.setCellValueFactory(new PropertyValueFactory<Cliente,String>("apellido"));

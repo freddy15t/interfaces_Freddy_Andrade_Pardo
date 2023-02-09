@@ -3,13 +3,25 @@ package PaginaUno;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
-
+/**
+ * 
+ * @author Freddy Andrade Pardo
+ *
+ */
 public class Cliente {
+	
     private final SimpleStringProperty nombre;
     private final SimpleStringProperty apellido;
     private final SimpleStringProperty email;
     private final SimpleIntegerProperty edad;
  
+    /**
+     * 
+     * @param fName
+     * @param lName
+     * @param email
+     * @param age
+     */
     public Cliente(String fName, String lName, String email, Integer age) {
         this.nombre = new SimpleStringProperty(fName);
         this.apellido = new SimpleStringProperty(lName);
@@ -17,6 +29,10 @@ public class Cliente {
         this.edad = new SimpleIntegerProperty(age);
     }
  
+    /**
+     * 
+     * @return devulve los getters and setters
+     */
     public String getNombre() {
         return nombre.get();
     }

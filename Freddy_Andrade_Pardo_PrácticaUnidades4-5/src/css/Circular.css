@@ -5,7 +5,7 @@
 .default-color3.chart-pie { -fx-background-color: yellow; }
 .default-color4.chart-pie { -fx-background-color: grey; }
  
-/* Estilos generales de las l�neas con las etiquetas que marcan los datos */
+/* Estilos generales de las lineas con las etiquetas que marcan los datos */
 .chart-pie-label-line {
     -fx-stroke: #8b4513;
     -fx-fill: #8b4513;

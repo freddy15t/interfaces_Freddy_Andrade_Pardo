@@ -8,19 +8,25 @@ import javafx.scene.control.TabPane;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
+/**
+ * 
+ * @author Freddy Andrade Pardo
+ *
+ */
 public class MainArea extends Application {
 	private Stage primaryStage;
+	
 	@Override
 	public void start(Stage primaryStage) {
 		try {
 			
 			this.primaryStage = primaryStage;
-			this.primaryStage.setTitle("Gráfico de área");
+			this.primaryStage.setTitle("Grafico de Area");
 			
-			 // Icono de la aplicación
+			 // Icono de la aplicacion
 		    this.primaryStage.getIcons().add(new Image("file:img/graficoArea.jpg"));
 			
-			// Carga el XML con el diseño principal
+			// Carga el XML con el diseno principal
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MainArea.class.getResource("Area.fxml"));
 			TabPane rootLayout = (TabPane) loader.load();
@@ -30,7 +36,7 @@ public class MainArea extends Application {
 			// Descomentar para ver CSS
 			rootLayout.getStylesheets().addAll(this.getClass().getResource("area.css").toExternalForm());
 
-			// Se añade el diseño principal a la escena
+			// Se anade el diseno principal a la escena
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
 			primaryStage.show();
@@ -39,6 +45,10 @@ public class MainArea extends Application {
 		}
 	}
 
+	/**
+	 * 
+	 * @param args es lo principal para que funcioone
+	 */
 	public static void main(String[] args) {
 		launch(args);
 	}
