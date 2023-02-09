@@ -21,12 +21,19 @@ import javafx.scene.layout.GridPane;
 
 import javafx.stage.Stage;
 
-
+/**
+ * 
+ * @author freddy Andrade Pardo
+ *
+ */
 public class ControllerMenu {
 	// Pantalla principal en la que se anade o quita contenido
 		private BorderPane rootLayout;
 		Image image2 = new Image(getClass(). getResourceAsStream("logo.jpg"));
-			        
+			 
+		/**
+		 * variabales
+		 */
 	    @FXML
 	    private Button entrar;
 	
@@ -38,6 +45,14 @@ public class ControllerMenu {
 	    MainApp main;
 
 
+	    /**
+	     * 
+	     * @param alerta
+	     * @param titulo
+	     * @param cabezera
+	     * @param contexto
+	     * @return
+	     */
 	    public static  Alert crearAlert(AlertType type, String title, String header, String contextText) {
 	    	Alert auxAlert = new Alert(type);
 	    	
@@ -49,16 +64,23 @@ public class ControllerMenu {
 	    }
 	    
 	
-	  
+	  /**
+	   * 
+	   * @param main
+	   */
 	    public void setMainApp(MainApp main) {
 	        this.main = main;   
 	    }
 	    
 	  
-	 
+	 /**
+	  * 
+	  * @param metodo iniciar sesion para entrar con usuario y contraseña
+	  * al ponerlo mal te saca la alerta de error
+	  */
 	    @FXML
 	    void iniciarSesion(ActionEvent event) {
-	    	if(usuario.getText().equals("") && psw.getText().equals("")) {
+	    	if(usuario.getText().equals("user") && psw.getText().equals("user")) {
 	    		main.abrirGeneral();
 	    		Stage ventana =(Stage) this.entrar.getScene().getWindow();
 				ventana.close();
@@ -70,7 +92,10 @@ public class ControllerMenu {
 		}
 	    
 	    
-	        
+	        /**
+	         * 
+	         * @param metodo abrir informacion para el cliente desde el menu
+	         */
 	    @FXML
 	    void abrirFormulario(ActionEvent event) {
 	    	try {
@@ -88,6 +113,22 @@ public class ControllerMenu {
 	    }
 	    
 	    
+	    /**
+	     * 
+	     * @param cerrar los recursos de la informacion del cliente
+	     */
+	    @FXML
+	    private void cerrarListado(ActionEvent event) {    	
+	    	// Se elimina el contenido del nodo central
+	    	rootLayout.setCenter(null);	
+	    }
+	    
+	    
+	    
+	    /**
+	     * 
+	     * @param abrir formulario desde el menu
+	     */
 	    @FXML
 	    void Abrir(ActionEvent event) {
 	    	try {
@@ -103,8 +144,11 @@ public class ControllerMenu {
 
 	    }
 	    
-	    
-
+			    
+		/**
+		 * 
+		 * @param abrir tutorial desde el menu 
+		 */
 	    @FXML
 	    void abrirTutorial(ActionEvent event) {
 	    	try {
@@ -112,7 +156,7 @@ public class ControllerMenu {
 				loader.setLocation(MainpagTres.class.getResource("/PaginaTres/MainpagTres.fxml"));
 				BorderPane controlavanzado = (BorderPane) loader.load();
 
-				// Se sit�a en el centro del dise�o principal
+				// Se situa en el centro del diseno principal
 				rootLayout.setCenter(controlavanzado);
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -121,14 +165,12 @@ public class ControllerMenu {
 	    }
 
 	    
-	    @FXML
-	    private void cerrarListado(ActionEvent event) {    	
-	    	// Se elimina el contenido del nodo central
-	    	rootLayout.setCenter(null);	
-	    }
+	   
 	    
-	    
-	    
+	    /**
+	     * 
+	     * @param abrir el grafico de area
+	     */
 	    
 	    @FXML
 	    void abrirGrafArea(ActionEvent event) {
@@ -147,6 +189,10 @@ public class ControllerMenu {
 
 	    }
 
+	  /**
+	   * 
+	   * @param abrir el grafico de barras
+	   */
 	    @FXML
 	    void abrirGrafBarras(ActionEvent event) {
 	    	try {
@@ -164,6 +210,11 @@ public class ControllerMenu {
 
 	    }
 
+	    
+	    /**
+	     * 
+	     * @param abrir el grafico circular
+	     */
 	    @FXML
 	    void abrirGrafCirculares(ActionEvent event) {
 	    	try {

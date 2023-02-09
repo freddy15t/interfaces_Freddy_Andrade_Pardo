@@ -15,12 +15,15 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <BorderPane prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PaginaTres.PagTresController">
    <top>
-      <HBox fx:id="pepito" prefHeight="58.0" prefWidth="650.0" spacing="10.0" style="-fx-background-color: #D2FAF0;" BorderPane.alignment="CENTER">
+      <HBox prefHeight="58.0" prefWidth="650.0" spacing="10.0" style="-fx-background-color: #D2FAF0;" BorderPane.alignment="CENTER">
          <children>
             <Button fx:id="boton" mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" stylesheets="@../css/pag3.css" text="Tutorial" />
          </children>
@@ -35,10 +38,26 @@
    <left>
       <VBox prefHeight="381.0" prefWidth="233.0" spacing="5.0" BorderPane.alignment="CENTER">
          <children>
-            <Text id="text" strokeType="OUTSIDE" strokeWidth="0.0" text="INFORMACIÓN">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="INFORMACIÓN" underline="true">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
+               <fill>
+                  <LinearGradient cycleMethod="REFLECT" endX="0.7730496453900708" endY="1.0" proportional="false">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
             </Text>
             <Hyperlink text="1.Cortes de pelo">
                <VBox.margin>
@@ -91,7 +110,10 @@
                   <ProgressIndicator progress="0.0" />
                </children>
             </FlowPane>
-            <Label layoutX="302.0" layoutY="22.0" prefHeight="17.0" prefWidth="216.0" text="Grado de satisfcacción al ser atendido" />
+            <Label layoutX="225.0" layoutY="22.0" prefHeight="20.0" prefWidth="293.0" text="Grado de satisfcacción al ser atendido" textFill="#c13939">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
          </children>
       </AnchorPane>
    </bottom>

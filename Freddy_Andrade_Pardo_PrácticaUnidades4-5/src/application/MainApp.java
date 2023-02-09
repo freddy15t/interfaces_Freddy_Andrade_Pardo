@@ -17,17 +17,31 @@ import javafx.scene.layout.VBox;
 
 import javafx.stage.Stage;
 
+/**
+ * @author Freddy Andrade Pardo
+ * @deprecated clase Main que será la que se ejecute del proyecto
+ *
+ */
 public class MainApp extends Application {
+	/**
+	 * variables utilizadas
+	 */
 	 private Stage primaryStage;
 	private GridPane rootLayout2;
 	private BorderPane rootLayout;
 	  @FXML
 	    private VBox vboxMovimiento;
+	  /**
+	   * anadir las imagenes en las clases
+	   */
 	  // la que aparece al inicio
 	  Image img1 = new Image(getClass(). getResourceAsStream("logo.jpg"));
 	  // para mostrar la imagen al ejecutar la practica
 	  Image img2 = new Image(getClass(). getResourceAsStream("logo.jpg"));
 
+	 /**
+	  * Metodo de comienzo de la practica
+	  */
 	@Override
 	public void start(Stage primaryStage) { //esto es para las ventanas
 		this.primaryStage = primaryStage;
@@ -36,8 +50,11 @@ public class MainApp extends Application {
 		
 	}
 
-	/*En el main en este caso me he creado las dos ventanas principales de la aplicaci�n
-	 * para tener manejo de ellas solo istanciando el main*/
+	/**
+	 * En el main en este caso me he creado las dos ventanas principales de la aplicaci�n
+	 * para tener manejo de ellas solo istanciando el main
+	 */
+	
 	public void iniciPrincipal() {
 		try {
 			// Carga el dise�o del archivo FXML en la variable rootLayout
@@ -61,6 +78,9 @@ public class MainApp extends Application {
 		}
 	}
 	
+	/**
+	 *  Muestra el menu de la aplicacion 
+	 */
 	
 	//abrir General
 	public void  abrirGeneral() {
@@ -92,16 +112,26 @@ public class MainApp extends Application {
 	    }
 	
 
+	/**
+	 * 
+	 * @return me devuelve el elemento raiz
+	 */
 	public BorderPane getRootLayout() {
 		return rootLayout;
 	}
-
+/**
+ * 
+ * @param rootLayout el cual se encarga de darle un valor a un atributo de un objeto
+ */
 
 	public void setRootLayout(BorderPane rootLayout) {
 		this.rootLayout = rootLayout;
 	}
 
-
+/**
+ * 
+ * @param args es lo principal para que funcioone
+ */
 	public static void main(String[] args) {
 		launch(args);
 	}
