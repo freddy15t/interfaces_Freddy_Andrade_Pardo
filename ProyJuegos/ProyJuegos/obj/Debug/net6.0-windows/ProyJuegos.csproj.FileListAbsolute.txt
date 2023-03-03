@@ -1,0 +1,5 @@
+C:\Users\Usuario\source\repos\ProyJuegos\ProyJuegos\obj\Debug\net6.0-windows\ProyJuegos.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\ProyJuegos\ProyJuegos\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Usuario\source\repos\ProyJuegos\ProyJuegos\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Usuario\source\repos\ProyJuegos\ProyJuegos\obj\Debug\net6.0-windows\ProyJuegos_MarkupCompile.cache
+C:\Users\Usuario\source\repos\ProyJuegos\ProyJuegos\obj\Debug\net6.0-windows\ProyJuegos_MarkupCompile.lref
