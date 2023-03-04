@@ -10,17 +10,17 @@
         <CommandBinding Command="ApplicationCommands.New" CanExecute="MyCommands_CanExecute" Executed="NewCommand_Executed" />
         <CommandBinding Command="ApplicationCommands.Close" CanExecute="MyCommands_CanExecute" Executed="CloseCommand_Executed" />
 
-    </Window.CommandBindings>   
-    <DockPanel LastChildFill="True">
+    </Window.CommandBindings>
+    <DockPanel Background="CadetBlue"  LastChildFill="True">
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="Archivo">
+            <MenuItem Header="_File">
                 <MenuItem Command="ApplicationCommands.New" Header="New"/>
                 <MenuItem Header="Open" Click="Open_Click" />
                 <MenuItem Header="Save"/>
                 <Separator/>
                 <MenuItem Command="ApplicationCommands.Close" Header="Exit"/>
             </MenuItem>
-            <MenuItem Header="Herramientas">
+            <MenuItem Header="_Tools">
                 <MenuItem Header="_Manage users">
                     <MenuItem.Icon>
                         <Image Source="/Images/user.png"/>
@@ -28,7 +28,7 @@
                 </MenuItem>
                 <MenuItem Header="_Show groups" IsCheckable="True" IsChecked="True" />
             </MenuItem>
-            <MenuItem Header="Editar">
+            <MenuItem Header="_Edit">
                 <MenuItem Header="Cut" IsEnabled="False"/>
                 <MenuItem Header="Copy" IsEnabled="False" />
                 <MenuItem Header="Paste" />
@@ -38,7 +38,8 @@
             <Button Command="ApplicationCommands.New" Content="Cambiar" Margin="10,10,10,0"/>
             <Button Command="ApplicationCommands.Close" Content="Cerrar" Margin="10,10,10,0"/>
         </StackPanel>
-        <Frame Content="Información" Name="myFrame" NavigationUIVisibility="Hidden"/>
-	 <Image Source="/Images/user.png"/>
+        <Frame Content="Info" Name="myFrame" NavigationUIVisibility="Hidden"/>
+        <Image Source="/Images/icon.png" Height="318" Width="591"/>
+
     </DockPanel>
 </Window>

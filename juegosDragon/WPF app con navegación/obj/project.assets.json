@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Ejemplos WPF\\juegos - copia\\WPF app con navegación\\WPF app con navegación.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Ejemplos WPF\\WPF app con navegación - copia - copia\\WPF app con navegación\\WPF app con navegación.csproj",
       "projectName": "WPF app con navegación",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos WPF\\juegos - copia\\WPF app con navegación\\WPF app con navegación.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos WPF\\WPF app con navegación - copia - copia\\WPF app con navegación\\WPF app con navegación.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos WPF\\juegos - copia\\WPF app con navegación\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\Ejemplos WPF\\WPF app con navegación - copia - copia\\WPF app con navegación\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

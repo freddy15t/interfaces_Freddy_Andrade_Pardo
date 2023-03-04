@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_app_con_navegación"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
-    <Grid>
+        Title="Formulario" Height="450" Width="800">
+    <Grid Background="DeepSkyBlue">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -18,27 +18,22 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="Botón sencillo" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button Content="Prueba botón" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1"/>
-        <Label Content="Botón con imagen" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top"/>
-        <Button Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Center">
-            <StackPanel Orientation="Horizontal">
-                <Image Source="/Images/icon.png" Stretch="None"/>
-                <TextBlock Text="Prueba"></TextBlock>
-            </StackPanel>
-        </Button>
-        <Label Content="CheckBox" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top"/>
+        <Label Content="Nombre " HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Apellidos" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Género&#xD;&#xA;" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top"/>
         <StackPanel Grid.Column="1" Grid.Row="2" Margin="0,0,0,10">
-            <CheckBox Content="CheckBox 1" IsThreeState="True" IsChecked="True"/>
-            <CheckBox Content="CheckBox 2"/>
-            <CheckBox Content="CheckBox 3"/>
+            <CheckBox Content="Masculino&#xD;&#xA;" IsThreeState="True" IsChecked="True" Checked="CheckBox_Checked_2"/>
+            <CheckBox Content="Femenino&#xD;&#xA;" Checked="CheckBox_Checked_1"/>
+            <CheckBox Content="Binario&#xD;&#xA;" Checked="CheckBox_Checked"/>
         </StackPanel>
-        <Label Content="RadioButton" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top"/>
+        <Label Content="¿Estás de acuerdo con&#xD;&#xA; la siguiete información?&#xD;&#xA;" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top"/>
         <StackPanel Grid.Column="1" Grid.Row="3" Margin="0,0,0,10">
-            <RadioButton Content="Yes" HorizontalAlignment="Left" VerticalAlignment="Center" IsChecked="True" IsThreeState="True"/>
+            <RadioButton Content="Si" HorizontalAlignment="Left" VerticalAlignment="Center" IsChecked="True" IsThreeState="True"/>
             <RadioButton Content="No" HorizontalAlignment="Left"/>
-            <RadioButton Content="Maybe" HorizontalAlignment="Left" VerticalAlignment="Center" GroupName="Maybe" IsChecked="True"/>
+            <RadioButton Content="Quizás" HorizontalAlignment="Left" VerticalAlignment="Center" GroupName="Maybe" IsChecked="True"/>
         </StackPanel>
+        <Label Grid.Column="1" Content="Freddy&#xD;&#xA;" HorizontalAlignment="Left" Margin="3,3,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="Andrade Pardo&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Margin="3,42,0,0" VerticalAlignment="Top" Grid.RowSpan="2" Height="24" Width="131"/>
 
     </Grid>
 </Window>
